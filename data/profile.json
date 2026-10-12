@@ -26,6 +26,7 @@
     "HCS",
     "TSIS CORSIM",
     "TRANSYT-7F",
+    "SwashSim",
     "ArcGIS Pro"
   ],
   "links": {
@@ -37,14 +38,14 @@
   "experience": [
     {
       "role": "Ph.D. Student & Graduate Research Assistant",
-      "org": "Penn State Harrisburg — Engineering and Computing Systems",
-      "when": "2026 – Present",
-      "text": "Research on traffic safety, traffic operations and human factors."
+      "org": "Penn State Harrisburg — Engineering and Computing Systems, with Dr. Agnimitra Sengupta",
+      "when": "Aug 2026 – Present",
+      "text": "Research on traffic safety and operations, and AI applications in transportation engineering."
     },
     {
       "role": "ITS Traffic Engineer",
       "org": "AtkinsRéalis — Florida DOT District Two (FDOT D2)",
-      "when": "Jun 2025 – 2026",
+      "when": "Jun 2025 – Mar 2026",
       "text": "Supported FDOT D2 on ITS projects: connected vehicle deployments, the innovative Truck Parking Availability System (iTPAS), rail crossing detection, wrong-way vehicle detection, video analytics and other emerging technology evaluations.",
       "image": "assets/img/atkinsrealis.jpg"
     },
@@ -71,13 +72,6 @@
       "image": "assets/img/researchkara.jpg"
     },
     {
-      "role": "Quantitative Developer, Business Development & Risk Management Specialist",
-      "org": "Ramzinex",
-      "when": "May 2021 – Aug 2023",
-      "text": "Built new features for a crypto exchange: AI trading bots, a top-10 crypto portfolio (Ramz Box), arbitrage and market-making bots, and sentiment analysis.",
-      "image": "assets/img/ramzinex.jpg"
-    },
-    {
       "role": "B.S. Civil Engineering & Research Assistant",
       "org": "Sharif University of Technology",
       "when": "2017 – 2021",
@@ -96,6 +90,11 @@
   "languages": "English, Persian, Azerbaijani",
   "leadership": [
     {
+      "role": "Director of Communication, Penn State ITE",
+      "org": "ITE Student Chapter, Pennsylvania State University",
+      "when": "Oct 2026 – Present"
+    },
+    {
       "role": "Vice President, Gator ITE",
       "org": "ITE Student Chapter, University of Florida",
       "when": "Apr 2023 – Apr 2024"
@@ -105,5 +104,23 @@
       "org": "Sharif University of Technology",
       "when": "Jun 2019 – Aug 2020"
     }
-  ]
+  ],
+  "certificates": [
+    {
+      "role": "IMSA Traffic Signal Technician I",
+      "org": "International Municipal Signal Association · ID AA_150495",
+      "when": "Mar 2026 – Mar 2029"
+    },
+    {
+      "role": "Advanced Temporary Traffic Control (TTC) / Maintenance of Traffic (MOT)",
+      "org": "Florida Department of Transportation · ID 649038",
+      "when": "Oct 2025 – Oct 2029"
+    },
+    {
+      "role": "NEMA Troubleshooting Program",
+      "org": "East Coast Training Alliance",
+      "when": "Oct 2025"
+    }
+  ],
+  "email": "mpm7767@psu.edu"
 }

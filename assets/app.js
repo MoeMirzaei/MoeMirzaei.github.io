@@ -39,8 +39,11 @@ function renderProfile(p) {
   renderLinks(p.links, $("links-footer"), p.cv);
   $("contact-linkedin").href = p.links.linkedin;
   $("skills").innerHTML = (p.skills || []).map((s) => `<li>${esc(s)}</li>`).join("");
-  $("leadership").innerHTML = (p.leadership || []).map((l) =>
+  const rows = (list) => (list || []).map((l) =>
     `<li><div><b>${esc(l.role)}</b><br><span>${esc(l.org)}</span></div><span>${esc(l.when)}</span></li>`).join("");
+  $("leadership").innerHTML = rows(p.leadership);
+  $("certificates").innerHTML = rows(p.certificates);
+  if (p.email) { $("contact-email").href = `mailto:${p.email}`; $("contact-email").textContent = p.email; }
   if (p.languages) $("languages").textContent = `Languages: ${p.languages}`;
 
   $("timeline").innerHTML = p.experience.map((e) => `
@@ -75,7 +78,13 @@ async function liveOrcidWorks() {
   }).sort((a, b) => (b.year || "0").localeCompare(a.year || "0"));
 }
 
+// ORCID titles typed in ALL CAPS read badly; show them in sentence case.
+const fixCase = (t) => (t && t === t.toUpperCase() && /[A-Z]{4}/.test(t))
+  ? t.toLowerCase().replace(/(^|[:.?!]\s+)([a-z])/g, (m, a, b) => a + b.toUpperCase())
+  : t;
+
 function renderPubs(works, updated) {
+  (works || []).forEach((w) => { w.title = fixCase(w.title); });
   const list = $("pubs");
   const meta = $("pub-meta");
   if (!works || !works.length) {
@@ -117,7 +126,6 @@ function renderPubs(works, updated) {
   $("year").textContent = new Date().getFullYear();
   const [profile, orcid] = await Promise.all([getJSON("data/profile.json"), getJSON("data/orcid.json")]);
   if (profile) renderProfile(profile);
-  if (orcid?.biography) { $("orcid-bio").textContent = orcid.biography; $("orcid-bio").hidden = false; }
 
   let works = orcid?.works;
   if (!works || !works.length) works = await liveOrcidWorks();
