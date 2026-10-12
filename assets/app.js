@@ -50,9 +50,11 @@ function renderProfile(p) {
   $("contact-linkedin").href = p.links.linkedin;
   $("skills").innerHTML = (p.skills || []).map((s) => `<li>${esc(s)}</li>`).join("");
   const L = (t) => linkPeople(esc(t), p.people);
-  const card = (l) => `<li><b>${esc(l.role)}</b><span class="org">${L(l.org)}</span>${l.file ? `<a class="view" href="${esc(l.file)}" target="_blank" rel="noopener">View certificate →</a>` : ""}<span class="when">${esc(l.when)}</span></li>`;
+  const card = (l) => `<li><b>${esc(l.role)}</b><span class="org">${L(l.org)}</span>${l.file ? `<a class="view" href="${esc(l.file)}" target="_blank" rel="noopener">${esc(l.fileLabel || "View certificate →")}</a>` : ""}<span class="when">${esc(l.when)}</span></li>`;
   $("teaching").innerHTML = (p.teaching || []).map(card).join("");
   $("leadership").innerHTML = (p.leadership || []).map(card).join("");
+  $("talks").innerHTML = (p.talks || []).map(card).join("");
+  $("memberships").innerHTML = (p.memberships || []).map(card).join("");
   const certs = p.certificates || [], shown = p.certificatesShown || 3;
   const drawCerts = (all) => { $("certificates").innerHTML = (all ? certs : certs.slice(0, shown)).map(card).join(""); };
   drawCerts(false);

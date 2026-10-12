@@ -184,12 +184,6 @@
       "org": "Florida LTAP Center (CUTR) · 90 minutes",
       "when": "Dec 2025",
       "file": "assets/certificates/ltap-cost-mastery-pricing-dashboards.pdf"
-    },
-    {
-      "role": "Dealing with Burnout",
-      "org": "Florida LTAP Center (CUTR) · 90 minutes",
-      "when": "Dec 2025",
-      "file": "assets/certificates/ltap-dealing-with-burnout.pdf"
     }
   ],
   "languages": "English, Persian, Azerbaijani",
@@ -217,5 +211,33 @@
     "Dr. Pruthvi Manjunatha": "https://webapps.unf.edu/faculty/bio/N01654005/pruthvi-manjunatha",
     "Dr. Kara Kockelman": "https://www.caee.utexas.edu/prof/Kockelman/"
   },
-  "certificatesShown": 3
+  "certificatesShown": 3,
+  "talks": [
+    {
+      "role": "Speaker, Vision Zero Open House 2025",
+      "org": "City of Gainesville, Department of Transportation",
+      "when": "Feb 26, 2025",
+      "file": "assets/talks/vision-zero-2025-speaker.jpg",
+      "fileLabel": "View certificate →"
+    },
+    {
+      "role": "Poster: Evaluation of the Gainesville Pedestrian-Bicyclists Connected Vehicle Pilot",
+      "org": "with Dr. Pruthvi Manjunatha, Dr. Lily Elefteriadou & Dr. Siva Srinivasan · UF Transportation Institute",
+      "when": "2025",
+      "file": "assets/talks/gainesville-cv-pilot-poster.jpg",
+      "fileLabel": "View poster →"
+    }
+  ],
+  "memberships": [
+    {
+      "role": "American Society of Civil Engineers (ASCE)",
+      "org": "Member",
+      "when": "Sep 2023 – Present"
+    },
+    {
+      "role": "Institute of Transportation Engineers (ITE)",
+      "org": "Member",
+      "when": "Sep 2023 – Present"
+    }
+  ]
 }
