@@ -251,8 +251,8 @@
   "certificatesShown": 3,
   "talks": [
     {
-      "role": "Poster (co-author): Innovative Truck Parking Availability System (iTPAS)",
-      "org": "Transportation Research Board (TRB) 105th Annual Meeting, Washington, D.C.",
+      "role": "Poster: Innovative Truck Parking Availability System (iTPAS)",
+      "org": "Presented by our research team · Transportation Research Board (TRB) 105th Annual Meeting, Washington, D.C.",
       "when": "Jan 2026",
       "news": "trb-2026-itpas"
     },
@@ -293,8 +293,8 @@
       "news": "transpo-2024"
     },
     {
-      "role": "Podium presentation (primary author): Evaluation of Gainesville Pedestrian-Bicyclist's Connected Vehicle Pilot",
-      "org": "ASCE International Conference on Transportation & Development (ICTD) 2024 with APM-ATS 2024, Atlanta · CAV Impacts session",
+      "role": "Podium presentation: Evaluation of Gainesville Pedestrian-Bicyclist's Connected Vehicle Pilot",
+      "org": "Presented by our research team · ASCE International Conference on Transportation & Development (ICTD) 2024 with APM-ATS 2024, Atlanta · CAV Impacts session",
       "when": "Jun 17, 2024"
     }
   ],
