@@ -1,1 +1,69 @@
-{"orcid":"0000-0002-8083-2653","works":[]}
+{
+  "orcid": "0000-0002-8083-2653",
+  "biography": "-I recently joined the Engineering and Computing Systems PhD program in the School of Science, Engineering, and Technology at Penn State Harrisburg, where I work as a Graduate Research Assistant focusing on traffic safety and operations.\n\n-In my role at AtkinsRéalis as an ITS/Traffic Engineer, I contributed to the Intelligent Transportation Systems (ITS) initiatives of the Florida Department of Transportation (FDOT) in District Two, Northeast Florida. Efforts include Connected Vehicle Deployments, Truck Parking Availability System (TPAS), Rail Crossing Detection, Drawbridge Detection, Wrong Way Vehicle Detection, Video Analytics, and other emerging technology evaluations.  \n \n-Prior to this position, I pursued a Master’s degree in Civil Engineering at the University of Florida, where I also served as a Graduate Research Assistant. During graduate studies in UF's I-STREET Lab, I was actively involved in the project titled “Evaluation of Gainesville Pedestrian-Bicyclists Connected Vehicle Pilot.” My responsibilities included collaborating with technology vendors, FDOT, and the City of Gainesville, as well as conducting evaluations and writing technical reports.",
+  "keywords": [
+    "Transportation",
+    "Traffic Safety and Operations",
+    "Intelligent Transportation Systems (ITS)",
+    "Connected and Autonomous Vehicles",
+    "Human factors and Driver behavior"
+  ],
+  "employments": [
+    {
+      "org": "Pennsylvania State University, Harrisburg",
+      "role": "Graduate Research Assistant",
+      "dept": "School of Science, Engineering, and Technology",
+      "start": "2026-08",
+      "end": ""
+    },
+    {
+      "org": "AtkinsRealis",
+      "role": "ITS Traffic Engineer",
+      "dept": "Intelligent Transportation Systems",
+      "start": "2025-06",
+      "end": "2026-03"
+    },
+    {
+      "org": "University of Florida",
+      "role": "Graduate Research Assistant",
+      "dept": "Civil and Coastal Engineering",
+      "start": "2023-08",
+      "end": "2025-05"
+    }
+  ],
+  "educations": [
+    {
+      "org": "Pennsylvania State University, Harrisburg",
+      "role": "Engineering and Computing Systems - Doctor of Philosophy",
+      "dept": "School of Science, Engineering, and Technology",
+      "start": "2026-08",
+      "end": ""
+    },
+    {
+      "org": "University of Florida",
+      "role": "Civil (Transportation) Engineering - Master of Science",
+      "dept": "Civil and Coastal Engineering",
+      "start": "2023-08",
+      "end": "2025-05"
+    }
+  ],
+  "works": [
+    {
+      "title": "Evaluation of Gainesville Pedestrian-Bicyclists Connected Vehicle Pilot",
+      "venue": "Florida Department of Transportation",
+      "year": "2025",
+      "type": "other",
+      "doi": null,
+      "url": "https://rosap.ntl.bts.gov/view/dot/93277"
+    },
+    {
+      "title": "INFERRING VEHICLE SPEEDS, MAKES, AND MODELS FROM VIDEO CAMERA FOOTAGE: READY OPPORTUNITIES FOR TRANSPORT DATA ANALYSIS",
+      "venue": "",
+      "year": "",
+      "type": "journal article",
+      "doi": null,
+      "url": null
+    }
+  ],
+  "updated": "2026-10-12"
+}
