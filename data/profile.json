@@ -237,6 +237,10 @@
         {
           "label": "ROSA P",
           "url": "https://rosap.ntl.bts.gov/view/dot/93277"
+        },
+        {
+          "label": "UFTI article",
+          "url": "https://www.transportation.institute.ufl.edu/2026/09/15/a-digital-safety-net-for-pedestrians-and-bicyclists-is-piloted-by-uf-transportation-engineers/"
         }
       ]
     }
@@ -330,6 +334,24 @@
       ],
       "date": "2026-09-20",
       "id": "2026-09-20-usdotroadsafetyinnov"
+    },
+    {
+      "id": "ufti-feature-2026",
+      "title": "Featured: UFTI article on our connected vehicle pilot",
+      "when": "Sep 2026",
+      "date": "2026-09-15",
+      "text": "UFTI featured our Gainesville Pedestrian-Bicyclist Connected Vehicle Pilot, which I worked on with Dr. Lily Elefteriadou, Dr. Pruthvi Manjunatha and Dr. Renan Favero. Reported near misses fell 35% between 2022 and 2024.",
+      "tags": [
+        "In the News",
+        "Connected Vehicles",
+        "Safety"
+      ],
+      "images": [
+        "assets/img/istreet.jpg",
+        "assets/talks/gainesville-cv-pilot-poster.jpg"
+      ],
+      "link": "https://www.transportation.institute.ufl.edu/2026/09/15/a-digital-safety-net-for-pedestrians-and-bicyclists-is-piloted-by-uf-transportation-engineers/",
+      "linkLabel": "Read UFTI article →"
     },
     {
       "title": "AtkinsRéalis at ESSIE, University of Florida",
