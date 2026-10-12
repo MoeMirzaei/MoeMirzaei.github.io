@@ -4,10 +4,11 @@ const ORCID_ID = "0000-0002-8083-2653";
 const ICONS = {
   orcid: '<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="12" fill="#A6CE39"/><path fill="#fff" d="M7.5 6.6a.9.9 0 1 1 0 1.8.9.9 0 0 1 0-1.8zM6.8 9.6h1.4v7.9H6.8zM10 9.6h3.3c3.1 0 4.5 2.2 4.5 3.95 0 1.9-1.5 3.95-4.5 3.95H10zm1.4 1.25v5.4h1.9c2.4 0 3-1.8 3-2.7 0-1.5-1-2.7-3-2.7z"/></svg>',
   wos: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.7 5.6 3.7 9s-1.2 6.4-3.7 9c-2.5-2.6-3.7-5.6-3.7-9S9.5 5.6 12 3z"/></svg>',
+  researchgate: '<svg viewBox="0 0 24 24"><rect width="24" height="24" rx="4" fill="#00CCBB"/><text x="11" y="17" font-family="Georgia,serif" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">R</text><text x="17.5" y="11" font-family="Georgia,serif" font-size="8" font-weight="700" text-anchor="middle" fill="#fff">G</text></svg>',
   linkedin: '<svg viewBox="0 0 24 24"><rect width="24" height="24" rx="4" fill="#0A66C2"/><path fill="#fff" d="M6.2 9.4h2.6V18H6.2zM7.5 5.3a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3zM10.4 9.4h2.5v1.2c.4-.7 1.3-1.4 2.6-1.4 2.7 0 3.2 1.8 3.2 4.1V18h-2.6v-4.2c0-1 0-2.3-1.4-2.3s-1.7 1.1-1.7 2.2V18h-2.6z"/></svg>',
   github: '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5a11.5 11.5 0 0 0-3.6 22.4c.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0C17.3 4.8 18.3 5 18.3 5c.6 1.6.2 2.8.1 3.1.7.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.2c0 .3.2.7.8.6A11.5 11.5 0 0 0 12 .5z"/></svg>',
 };
-const LABELS = { orcid: "ORCID", wos: "Web of Science", linkedin: "LinkedIn", github: "GitHub" };
+const LABELS = { orcid: "ORCID", wos: "Web of Science", researchgate: "ResearchGate", linkedin: "LinkedIn", github: "GitHub" };
 
 const $ = (id) => document.getElementById(id);
 const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
