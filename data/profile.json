@@ -66,7 +66,7 @@
       "when": "May 2022 – Apr 2023",
       "text": "Detected, tracked and recognized vehicles in camera footage with YOLOv4 and Deep SORT, and measured their speeds, make and model.",
       "link": {
-        "label": "Paper (TRB 2024)",
+        "label": "Paper (PDF)",
         "url": "https://caee.webhost.utexas.edu/prof/Kockelman/public_html/TRB24InferringVehicleSpeeds.pdf"
       },
       "image": "assets/img/researchkara.jpg"
@@ -134,9 +134,10 @@
     {
       "_note": "Corrects ORCID entries on the site. Match by the start of the title (any case).",
       "match": "inferring vehicle speeds",
-      "type": "conference paper",
-      "venue": "Transportation Research Board (TRB) 103rd Annual Meeting",
-      "year": "2024"
+      "type": "other",
+      "venue": "Working paper · The University of Texas at Austin",
+      "year": "2023",
+      "url": "https://caee.webhost.utexas.edu/prof/Kockelman/public_html/TRB24InferringVehicleSpeeds.pdf"
     },
     {
       "match": "evaluation of gainesville",
