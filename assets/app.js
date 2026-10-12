@@ -32,7 +32,7 @@ function renderLinks(links, el, cv) {
 function renderProfile(p) {
   $("name").textContent = p.name;
   $("title").textContent = p.title;
-  $("affiliation").textContent = p.affiliation;
+  if (p.subtitle2) $("subtitle2").textContent = p.subtitle2;
   $("tagline").textContent = p.tagline;
   if (p.photo) $("photo").src = p.photo;
   $("interests").innerHTML = p.interests.map((i) => `<li>${esc(i)}</li>`).join("");

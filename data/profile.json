@@ -2,9 +2,8 @@
   "_note": "Edit this file by hand. LinkedIn can't be read automatically, so keep your experience here. Publications come from ORCID automatically.",
   "name": "Moe Mirzaei",
   "fullName": "Mohammadreza Mirzaei",
-  "title": "Ph.D. Student · Transportation Engineering",
-  "affiliation": "Penn State Harrisburg",
-  "tagline": "I study traffic safety and operations, and human factors, using data, computer vision and Intelligent Transportation Systems (ITS).",
+  "title": "Transportation Engineering",
+  "tagline": "My research focuses on Intelligent Transportation Systems (ITS), traffic safety and operations, and human factors, using data, computer vision and AI methods.",
   "photo": "https://avatars.githubusercontent.com/u/90872315?v=4",
   "interests": [
     "Intelligent Transportation Systems",
@@ -47,7 +46,7 @@
       "degree": "M.S., Civil/Transportation Engineering",
       "school": "University of Florida, Gainesville",
       "when": "2023 – 2025",
-      "note": "GPA 4.0/4.0"
+      "note": "Advisors: Dr. Lily Elefteriadou & Dr. Pruthvi Manjunatha · GPA 4.0/4.0"
     },
     {
       "degree": "B.S., Civil Engineering",
@@ -173,7 +172,7 @@
       "_note": "Corrects ORCID entries on the site. Match by the start of the title (any case).",
       "match": "inferring vehicle speeds",
       "type": "other",
-      "venue": "Working paper · The University of Texas at Austin",
+      "venue": "Prepared at The University of Texas at Austin",
       "year": "2023",
       "url": "https://caee.webhost.utexas.edu/prof/Kockelman/public_html/TRB24InferringVehicleSpeeds.pdf"
     },
@@ -182,5 +181,6 @@
       "type": "technical report",
       "url": "https://rosap.ntl.bts.gov/view/dot/93277"
     }
-  ]
+  ],
+  "subtitle2": "Ph.D. Student · Graduate Research Assistant"
 }
