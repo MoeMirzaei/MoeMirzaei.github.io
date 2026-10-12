@@ -58,7 +58,7 @@ function renderNews(p) {
   if (p.linkedinActivity) $("li-activity").href = p.linkedinActivity;
   const post = (n, k) => {
     const imgs = n.images || [], vis = imgs.slice(0, 4), extra = imgs.length - vis.length;
-    const gal = vis.map((src, i) => `<button type="button" data-post="${k}" data-i="${i}" aria-label="Open photo ${i + 1} of ${imgs.length}"><img src="${esc(src)}" alt="" loading="lazy">${i === 3 && extra > 0 ? `<span class="plus">+${extra}</span>` : ""}</button>`).join("");
+    const gal = vis.map((src, i) => `<button type="button" data-post="${k}" data-i="${i}" aria-label="Open photo ${i + 1} of ${imgs.length}"><img src="${esc(src)}" alt="" loading="lazy">${i === 3 && extra > 0 ? `<span class="plus">+${extra}</span>` : ""}${i === 0 && imgs.length > 1 ? `<span class="plus plus-m">+${imgs.length - 1}</span>` : ""}</button>`).join("");
     return `<li class="post">
       ${imgs.length ? `<div class="gallery n${vis.length}">${gal}</div>` : ""}
       <div class="post-body">

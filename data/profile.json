@@ -139,7 +139,7 @@
     },
     {
       "role": "Vice President, Gator ITE",
-      "org": "ITE Student Chapter, University of Florida",
+      "org": "ITE Student Chapter, University of Florida · Student Chapter of the Year 2024",
       "when": "Apr 2023 – Apr 2024"
     },
     {
@@ -252,6 +252,16 @@
       "when": "Feb 2025",
       "file": "assets/talks/gainesville-cv-pilot-poster.jpg",
       "fileLabel": "View poster →"
+    },
+    {
+      "role": "Poster: Evaluation of the Gainesville Pedestrian-Bicyclists Connected Vehicle Pilot",
+      "org": "Florida Automated Vehicles (FAV) Summit 2024",
+      "when": "Sep 2024"
+    },
+    {
+      "role": "Presentation: Evaluation of the Gainesville Pedestrian-Bicyclists Connected Vehicle Pilot",
+      "org": "Transpo 2024, ITE Florida-Puerto Rico District & ITS Florida",
+      "when": "Aug 2024"
     }
   ],
   "memberships": [
@@ -272,7 +282,7 @@
     {
       "title": "U.S. DOT Road Safety Innovation Expo",
       "when": "Sep 2026",
-      "text": "Attended the U.S. Department of Transportation's Road Safety Innovation Expo in Washington, D.C., exploring the latest work in roadway safety, connected systems and emerging technologies, and connecting with professionals working toward safer, smarter transportation.",
+      "text": "Explored the latest roadway safety, connected systems and emerging technologies at the U.S. DOT expo in Washington, D.C.",
       "tags": [
         "Safety",
         "ITS",
@@ -283,12 +293,28 @@
         "assets/news/usdot-expo-2.jpg",
         "assets/news/usdot-expo-3.jpg",
         "assets/news/usdot-expo-4.jpg"
-      ]
+      ],
+      "date": "2026-09-20"
+    },
+    {
+      "title": "AtkinsRéalis at ESSIE, University of Florida",
+      "when": "Feb 2026",
+      "text": "Represented AtkinsRéalis at a UF ESSIE event with Antonio Del Mastro, P.E.",
+      "tags": [
+        "ESSIE",
+        "UF",
+        "AtkinsRéalis"
+      ],
+      "images": [
+        "assets/news/uf-essie-1.jpg",
+        "assets/news/uf-essie-2.jpg"
+      ],
+      "date": "2026-02-04"
     },
     {
       "title": "iTPAS poster at TRB 2026",
       "when": "Jan 2026",
-      "text": "Our team presented a poster on the Innovative Truck Parking Availability System (iTPAS) at the TRB Annual Meeting. iTPAS uses computer vision to monitor truck parking at Florida highway rest areas in real time and shares live availability through Florida 511 and dynamic message signs.",
+      "text": "Our team presented the Innovative Truck Parking Availability System (iTPAS), a computer vision system that shares live truck parking availability via Florida 511 and message signs.",
       "tags": [
         "TRB",
         "Computer Vision",
@@ -296,12 +322,13 @@
       ],
       "images": [
         "assets/news/trb2026-itpas-1.jpg"
-      ]
+      ],
+      "date": "2026-01-15"
     },
     {
       "title": "Florida Automated Vehicles (FAV) Summit 2025",
       "when": "Nov 2025",
-      "text": "This year's summit focused on Advanced Air Mobility, with operations in Florida expected by the end of 2026. Other highlights included autonomous shuttles, trucks and trains, drone delivery, and Waymo's safety findings. Proud to be part of the AtkinsRéalis and FDOT District 2 team working on intelligent transportation systems.",
+      "text": "Advanced Air Mobility took center stage, alongside autonomous shuttles, trucks, drone delivery and Waymo's safety findings.",
       "tags": [
         "Autonomous Vehicles",
         "AAM",
@@ -314,38 +341,26 @@
         "assets/news/fav-summit-2025-4.jpg",
         "assets/news/fav-summit-2025-5.jpg",
         "assets/news/fav-summit-2025-6.jpg"
-      ]
+      ],
+      "date": "2025-11-09"
     },
     {
       "title": "AtkinsRéalis at UF Career Week",
       "when": "Oct 2025",
-      "text": "Back on campus at the University of Florida with the AtkinsRéalis team for Career Week Technical Day, meeting students interested in transportation and engineering careers.",
+      "text": "Met UF students at Career Week Technical Day with the AtkinsRéalis team.",
       "tags": [
         "Careers",
         "AtkinsRéalis"
       ],
       "images": [
         "assets/news/uf-career-week-1.jpg"
-      ]
-    },
-    {
-      "title": "AtkinsRéalis at ESSIE, University of Florida",
-      "when": "Oct 2025",
-      "text": "Represented AtkinsRéalis with Antonio Del Mastro, P.E., at an Engineering School of Sustainable Infrastructure & Environment (ESSIE) event at the University of Florida.",
-      "tags": [
-        "ESSIE",
-        "UF",
-        "AtkinsRéalis"
       ],
-      "images": [
-        "assets/news/uf-essie-1.jpg",
-        "assets/news/uf-essie-2.jpg"
-      ]
+      "date": "2025-10-01"
     },
     {
       "title": "Graduated with an M.S. from the University of Florida",
       "when": "May 2025",
-      "text": "Completed my Master's in Civil Engineering (Transportation) at UF. As a Graduate Research Assistant I worked on the Gainesville Pedestrian and Bicyclist Connected Vehicle Pilot with FDOT, the City of Gainesville and technology vendors. Thank you to my advisors, Dr. Lily Elefteriadou and Dr. Pruthvi Manjunatha, and to my wife and family for their support. Go Gators!",
+      "text": "Completed my M.S. in Civil (Transportation) Engineering at UF. Grateful to my advisors, Dr. Lily Elefteriadou and Dr. Pruthvi Manjunatha, and to my family. Go Gators!",
       "tags": [
         "Graduation",
         "UF",
@@ -358,12 +373,13 @@
         "assets/news/uf-graduation-4.jpg",
         "assets/news/uf-graduation-5.jpg",
         "assets/news/uf-graduation-6.jpg"
-      ]
+      ],
+      "date": "2025-05-01"
     },
     {
       "title": "Speaker at the Vision Zero Open House",
       "when": "Feb 2025",
-      "text": "Presented at the City of Gainesville's Vision Zero Open House with the Gator ITE team, sharing our connected vehicle pilot work and discussing pedestrian and bicyclist safety with professionals and community members. Thank you to Dr. Karla Rodrigues-Silva, Dr. Pruthvi Manjunatha and Dr. Lily Elefteriadou for the opportunity.",
+      "text": "Presented at the City of Gainesville's Vision Zero Open House with Gator ITE, discussing pedestrian and bicyclist safety.",
       "tags": [
         "Vision Zero",
         "Pedestrian Safety",
@@ -373,12 +389,13 @@
         "assets/news/vision-zero-2025-1.jpg",
         "assets/news/vision-zero-2025-2.jpg",
         "assets/news/vision-zero-2025-3.jpg"
-      ]
+      ],
+      "date": "2025-02-26"
     },
     {
       "title": "TRB Annual Meeting 2025",
       "when": "Jan 2025",
-      "text": "Attended the Transportation Research Board Annual Meeting in Washington, D.C.: reconnecting with friends, networking with professionals and professors, and learning from poster and presentation sessions on the latest transportation research.",
+      "text": "Reconnected with friends and colleagues and learned from the latest research at TRB in Washington, D.C.",
       "tags": [
         "TRB",
         "Research"
@@ -388,12 +405,13 @@
         "assets/news/trb2025-2.jpg",
         "assets/news/trb2025-3.jpg",
         "assets/news/trb2025-4.jpg"
-      ]
+      ],
+      "date": "2025-01-07"
     },
     {
       "title": "First Coast ITE meeting in Gainesville",
       "when": "Sep 2024",
-      "text": "Joined the First Coast Chapter of ITE meeting and social at Depot Park, with presentations from FDOT and the City of Gainesville on upcoming safety projects in the city and county.",
+      "text": "FDOT and the City of Gainesville shared upcoming safety projects at the First Coast ITE meeting at Depot Park.",
       "tags": [
         "ITE",
         "Safety",
@@ -401,12 +419,13 @@
       ],
       "images": [
         "assets/news/first-coast-ite-2024-1.jpg"
-      ]
+      ],
+      "date": "2024-09-19"
     },
     {
       "title": "Gator ITE General Body Meeting",
       "when": "Sep 2024",
-      "text": "Introduced ITE and the Gator ITE chapter to UF students, shared our past work and upcoming events, and presented my research on the Gainesville connected vehicle pilot and the TravelSafely app.",
+      "text": "Introduced Gator ITE to UF students and presented my work on the Gainesville connected vehicle pilot.",
       "tags": [
         "Gator ITE",
         "Connected Vehicles",
@@ -418,6 +437,53 @@
         "assets/news/gator-ite-gbm-2024-3.jpg",
         "assets/news/gator-ite-gbm-2024-4.jpg",
         "assets/news/gator-ite-gbm-2024-5.jpg"
+      ],
+      "date": "2024-09-12"
+    },
+    {
+      "title": "Poster presenter at FAV Summit 2024",
+      "when": "Sep 2024",
+      "date": "2024-09-05",
+      "text": "Presented our Gainesville connected vehicle pilot poster and saw the latest in connected and autonomous vehicle technology.",
+      "tags": [
+        "Autonomous Vehicles",
+        "Poster"
+      ],
+      "images": [
+        "assets/news/fav-summit-2024-1.jpg",
+        "assets/news/fav-summit-2024-2.jpg"
+      ]
+    },
+    {
+      "title": "Presented at Transpo 2024 · Gator ITE named Chapter of the Year",
+      "when": "Aug 2024",
+      "date": "2024-08-28",
+      "text": "Presented our evaluation of the Gainesville Pedestrian-Bicyclist Connected Vehicle Pilot. Gator ITE also won Student Chapter of the Year.",
+      "tags": [
+        "Transpo",
+        "ITS",
+        "Award"
+      ],
+      "images": [
+        "assets/news/transpo-2024-1.jpg",
+        "assets/news/transpo-2024-2.jpg",
+        "assets/news/transpo-2024-3.jpg"
+      ]
+    },
+    {
+      "title": "Seminar by Dr. Fred Mannering on AI and highway safety",
+      "when": "Apr 2024",
+      "date": "2024-04-11",
+      "text": "Attended Dr. Fred Mannering's talk on data analytics and AI for highway safety, organized by Dr. Xilei Zhao.",
+      "tags": [
+        "AI",
+        "Safety",
+        "Seminar"
+      ],
+      "images": [
+        "assets/news/mannering-seminar-2024-1.jpg",
+        "assets/news/mannering-seminar-2024-2.jpg",
+        "assets/news/mannering-seminar-2024-3.jpg"
       ]
     }
   ]
