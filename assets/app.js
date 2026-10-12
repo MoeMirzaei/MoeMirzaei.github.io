@@ -19,10 +19,13 @@ async function getJSON(url, opts) {
   } catch { return null; }
 }
 
-function renderLinks(links, el) {
-  el.innerHTML = Object.entries(links)
-    .map(([k, url]) => `<a class="btn" href="${esc(url)}" target="_blank" rel="noopener">${ICONS[k] || ""}${LABELS[k] || k}</a>`)
-    .join("");
+const CV_ICON = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0-4-4m4 4 4-4M5 21h14"/></svg>';
+
+function renderLinks(links, el, cv) {
+  el.innerHTML = (cv ? `<a class="btn btn-cv" href="${esc(cv)}" target="_blank" rel="noopener">${CV_ICON}Download CV</a>` : "") +
+    Object.entries(links)
+      .map(([k, url]) => `<a class="btn" href="${esc(url)}" target="_blank" rel="noopener">${ICONS[k] || ""}${LABELS[k] || k}</a>`)
+      .join("");
 }
 
 function renderProfile(p) {
@@ -32,9 +35,13 @@ function renderProfile(p) {
   $("tagline").textContent = p.tagline;
   if (p.photo) $("photo").src = p.photo;
   $("interests").innerHTML = p.interests.map((i) => `<li>${esc(i)}</li>`).join("");
-  renderLinks(p.links, $("links"));
-  renderLinks(p.links, $("links-footer"));
+  renderLinks(p.links, $("links"), p.cv);
+  renderLinks(p.links, $("links-footer"), p.cv);
   $("contact-linkedin").href = p.links.linkedin;
+  $("skills").innerHTML = (p.skills || []).map((s) => `<li>${esc(s)}</li>`).join("");
+  $("leadership").innerHTML = (p.leadership || []).map((l) =>
+    `<li><div><b>${esc(l.role)}</b><br><span>${esc(l.org)}</span></div><span>${esc(l.when)}</span></li>`).join("");
+  if (p.languages) $("languages").textContent = `Languages: ${p.languages}`;
 
   $("timeline").innerHTML = p.experience.map((e) => `
     <li class="item${e.image ? "" : " no-img"}">

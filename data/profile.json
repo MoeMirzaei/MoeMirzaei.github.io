@@ -5,9 +5,29 @@
   "title": "Ph.D. Student · Transportation Engineering",
   "affiliation": "Penn State Harrisburg",
   "tagline": "I study traffic safety, traffic operations and human factors, using data, computer vision and Intelligent Transportation Systems (ITS).",
-  "photo": "assets/img/graduation.jpg",
-  "interests": ["Traffic Safety", "Traffic Operations", "Human Factors", "Intelligent Transportation Systems", "Connected Vehicles", "Computer Vision", "Optimization"],
-  "skills": ["Python", "R", "R Shiny", "Deep Learning", "YOLO / Deep SORT", "Data Visualization"],
+  "photo": "https://avatars.githubusercontent.com/u/90872315?v=4",
+  "interests": [
+    "Intelligent Transportation Systems",
+    "Traffic Operations & Safety",
+    "Human Factors",
+    "Connected Vehicles",
+    "AI & Data Science",
+    "Computer Vision"
+  ],
+  "skills": [
+    "Python",
+    "R",
+    "Julia",
+    "MATLAB",
+    "SQL / MongoDB",
+    "Docker",
+    "VISSIM",
+    "VISUM",
+    "HCS",
+    "TSIS CORSIM",
+    "TRANSYT-7F",
+    "ArcGIS Pro"
+  ],
   "links": {
     "orcid": "https://orcid.org/0000-0002-8083-2653",
     "wos": "https://www.webofscience.com/wos/author/record/QYQ-9915-2026",
@@ -18,52 +38,72 @@
     {
       "role": "Ph.D. Student & Graduate Research Assistant",
       "org": "Penn State Harrisburg — Engineering and Computing Systems",
-      "when": "Now",
+      "when": "2026 – Present",
       "text": "Research on traffic safety, traffic operations and human factors."
     },
     {
       "role": "ITS Traffic Engineer",
-      "org": "AtkinsRéalis — FDOT District Two, Northeast Florida",
-      "when": "",
-      "text": "Worked on FDOT's ITS projects: connected vehicle deployments, the Truck Parking Availability System (TPAS), rail crossing, drawbridge and wrong-way vehicle detection, and video analytics.",
+      "org": "AtkinsRéalis — Florida DOT District Two (FDOT D2)",
+      "when": "Jun 2025 – 2026",
+      "text": "Supported FDOT D2 on ITS projects: connected vehicle deployments, the innovative Truck Parking Availability System (iTPAS), rail crossing detection, wrong-way vehicle detection, video analytics and other emerging technology evaluations.",
       "image": "assets/img/atkinsrealis.jpg"
     },
     {
-      "role": "M.S. Civil Engineering & Graduate Research Assistant",
-      "org": "University of Florida — I-STREET Lab",
-      "when": "",
-      "text": "Evaluated the Gainesville Pedestrian-Bicyclist Connected Vehicle Pilot. Worked with technology vendors, FDOT and the City of Gainesville, and wrote technical reports.",
-      "link": {"label": "Final report", "url": "https://rosap.ntl.bts.gov/view/dot/93277"},
+      "role": "M.S. Civil/Transportation Engineering (GPA 4.0) & Graduate Research Assistant",
+      "org": "University of Florida — I-STREET Lab, with Dr. Lily Elefteriadou & Dr. Pruthvi Manjunatha",
+      "when": "Aug 2023 – May 2025",
+      "text": "Evaluated the Gainesville Pedestrian-Bicyclist Connected Vehicle Pilot: passive pedestrian detection, CV communication reliability, and user views of the smartphone app through focus groups and experiments. Worked with roadside units, on-board units, TravelSafely/Glance and Bosch cameras, alongside vendors (Yunex, Applied Information, Bosch) and FDOT. Teaching assistant for Transportation Engineering (2024).",
+      "link": {
+        "label": "Final report",
+        "url": "https://rosap.ntl.bts.gov/view/dot/93277"
+      },
       "image": "assets/img/istreet.jpg"
     },
     {
-      "role": "Research — Inferring Vehicle Speeds from Video",
-      "org": "with Prof. Kara Kockelman, UT Austin",
-      "when": "",
+      "role": "Research — Inferring Vehicle Speeds, Makes & Models from Video",
+      "org": "Remote, with Dr. Kara Kockelman, UT Austin",
+      "when": "May 2022 – Apr 2023",
       "text": "Detected, tracked and recognized vehicles in camera footage with YOLOv4 and Deep SORT, and measured their speeds, make and model.",
-      "link": {"label": "Paper (TRB 2024)", "url": "https://caee.webhost.utexas.edu/prof/Kockelman/public_html/TRB24InferringVehicleSpeeds.pdf"},
+      "link": {
+        "label": "Paper (TRB 2024)",
+        "url": "https://caee.webhost.utexas.edu/prof/Kockelman/public_html/TRB24InferringVehicleSpeeds.pdf"
+      },
       "image": "assets/img/researchkara.jpg"
     },
     {
-      "role": "Quantitative Developer, Business Development & Risk Management",
+      "role": "Quantitative Developer, Business Development & Risk Management Specialist",
       "org": "Ramzinex",
-      "when": "",
-      "text": "Built Python, data science and AI tools while solving fast-moving business problems.",
+      "when": "May 2021 – Aug 2023",
+      "text": "Built new features for a crypto exchange: AI trading bots, a top-10 crypto portfolio (Ramz Box), arbitrage and market-making bots, and sentiment analysis.",
       "image": "assets/img/ramzinex.jpg"
     },
     {
-      "role": "B.S. Civil Engineering",
+      "role": "B.S. Civil Engineering & Research Assistant",
       "org": "Sharif University of Technology",
-      "when": "",
-      "text": "Thesis with Dr. Amir Samimi on urban freight problems (vehicle routing and pickup-and-delivery with time windows, capacity and multiple depots). Built an R Shiny dashboard to solve them.",
+      "when": "2017 – 2021",
+      "text": "Research with Dr. Amir Samimi on urban freight: vehicle routing (VRP) and pickup-and-delivery (PDP) problems. Built a dashboard that solves them with Genetic Algorithm and Simulated Annealing in Python and R. TA for Python Programming and for Engineering Probability & Statistics.",
       "image": "assets/img/bachelorthesis.jpg"
     },
     {
-      "role": "Data Analyst Intern",
+      "role": "Transportation Data Analyst (Intern)",
       "org": "Roads and Transportation Information Management Center",
-      "when": "",
-      "text": "Wrote Python code with data visualization to find faulty traffic counters, and reviewed traffic and speed camera systems in other countries.",
+      "when": "Jul – Aug 2020",
+      "text": "Reviewed traffic camera systems in other countries, troubleshot travel-time camera locations and algorithms, and found faulty traffic counters with Python and data visualization.",
       "image": "assets/img/internship.jpg"
+    }
+  ],
+  "cv": "assets/CV-MoeMirzaei.pdf",
+  "languages": "English, Persian, Azerbaijani",
+  "leadership": [
+    {
+      "role": "Vice President, Gator ITE",
+      "org": "ITE Student Chapter, University of Florida",
+      "when": "Apr 2023 – Apr 2024"
+    },
+    {
+      "role": "President, Civil Engineering Club",
+      "org": "Sharif University of Technology",
+      "when": "Jun 2019 – Aug 2020"
     }
   ]
 }
