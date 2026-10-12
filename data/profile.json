@@ -152,17 +152,20 @@
     {
       "role": "IMSA Traffic Signal Technician I",
       "org": "International Municipal Signal Association · ID AA_150495",
-      "when": "Mar 2026 – Mar 2029"
+      "when": "Mar 2026 – Mar 2029",
+      "file": ""
     },
     {
       "role": "Advanced Temporary Traffic Control (TTC) / Maintenance of Traffic (MOT)",
       "org": "Florida Department of Transportation · ID 649038",
-      "when": "Oct 2025 – Oct 2029"
+      "when": "Oct 2025 – Oct 2029",
+      "file": ""
     },
     {
       "role": "NEMA Troubleshooting Program",
       "org": "East Coast Training Alliance",
-      "when": "Oct 2025"
+      "when": "Oct 2025",
+      "file": ""
     }
   ],
   "languages": "English, Persian, Azerbaijani",
@@ -183,5 +186,13 @@
       "url": "https://rosap.ntl.bts.gov/view/dot/93277"
     }
   ],
-  "subtitle2": "Ph.D. Student · Graduate Research Assistant"
+  "subtitle2": "Ph.D. Student · Graduate Research Assistant",
+  "people": {
+    "Dr. Agnimitra Sengupta": "https://harrisburg.psu.edu/faculty-and-staff/agnimitra-sengupta",
+    "Dr. Lily Elefteriadou": "https://www.essie.ufl.edu/people/name/lily-elefteriadou/",
+    "Dr. Pruthvi Manjunatha": "https://www.essie.ufl.edu/people/name/pruthvi-manjunatha/",
+    "Dr. Kara Kockelman": "https://www.caee.utexas.edu/prof/Kockelman/",
+    "Dr. Amir Samimi": "https://civil.sharif.ir/~amir.samimi"
+  },
+  "certificatesShown": 3
 }

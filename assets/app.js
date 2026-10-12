@@ -30,6 +30,14 @@ function renderLinks(links, el, cv) {
       .join("");
 }
 
+// Turn advisor names into links to their pages (names come from profile.json "people").
+function linkPeople(html, people) {
+  for (const [name, url] of Object.entries(people || {})) {
+    html = html.split(esc(name)).join(`<a href="${esc(url)}" target="_blank" rel="noopener">${esc(name)}</a>`);
+  }
+  return html;
+}
+
 function renderProfile(p) {
   $("name").textContent = p.name;
   $("title").textContent = p.title;
@@ -41,25 +49,32 @@ function renderProfile(p) {
   renderLinks(p.links, $("links-footer"), p.cv);
   $("contact-linkedin").href = p.links.linkedin;
   $("skills").innerHTML = (p.skills || []).map((s) => `<li>${esc(s)}</li>`).join("");
-  const rows = (list) => (list || []).map((l) =>
-    `<li><div><b>${esc(l.role)}</b><br><span>${esc(l.org)}</span></div><span>${esc(l.when)}</span></li>`).join("");
-  $("leadership").innerHTML = rows(p.leadership);
-  $("certificates").innerHTML = rows(p.certificates);
-  $("teaching").innerHTML = rows(p.teaching);
+  const L = (t) => linkPeople(esc(t), p.people);
+  const card = (l) => `<li><b>${esc(l.role)}</b><span class="org">${L(l.org)}</span>${l.file ? `<a class="view" href="${esc(l.file)}" target="_blank" rel="noopener">View certificate →</a>` : ""}<span class="when">${esc(l.when)}</span></li>`;
+  $("teaching").innerHTML = (p.teaching || []).map(card).join("");
+  $("leadership").innerHTML = (p.leadership || []).map(card).join("");
+  const certs = p.certificates || [], shown = p.certificatesShown || 3;
+  const drawCerts = (all) => { $("certificates").innerHTML = (all ? certs : certs.slice(0, shown)).map(card).join(""); };
+  drawCerts(false);
+  if (certs.length > shown) {
+    const btn = $("cert-more"); btn.hidden = false; let open = false;
+    btn.textContent = `See all ${certs.length} certificates`;
+    btn.onclick = () => { open = !open; drawCerts(open); btn.textContent = open ? "Show fewer" : `See all ${certs.length} certificates`; };
+  }
   $("edu").innerHTML = (p.education || []).map((e) => `
     <li>
-      <div><h3>${esc(e.degree)}</h3><div class="school">${esc(e.school)}</div>${e.note ? `<div class="note">${esc(e.note)}</div>` : ""}</div>
+      <div><h3>${esc(e.degree)}</h3><div class="school">${esc(e.school)}</div>${e.note ? `<div class="note">${linkPeople(esc(e.note), p.people)}</div>` : ""}</div>
       <div class="when">${esc(e.when)}</div>
     </li>`).join("");
   if (p.email) { $("contact-email").href = `mailto:${p.email}`; $("contact-email").textContent = p.email; }
-  if (p.languages) $("languages").textContent = `Languages: ${p.languages}`;
+  if (p.languages) $("languages").textContent = p.languages;
 
   $("timeline").innerHTML = p.experience.map((e) => `
     <li class="item${e.image ? "" : " no-img"}">
       <div>
         ${e.when ? `<div class="when">${esc(e.when)}</div>` : ""}
         <h3>${esc(e.role)}</h3>
-        <div class="org">${esc(e.org)}</div>
+        <div class="org">${linkPeople(esc(e.org), p.people)}</div>
         <p>${esc(e.text)}</p>
         ${e.link ? `<a class="more" href="${esc(e.link.url)}" target="_blank" rel="noopener">${esc(e.link.label)} →</a>` : ""}
       </div>
