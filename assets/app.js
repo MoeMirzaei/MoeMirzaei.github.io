@@ -65,7 +65,7 @@ function renderNews(p) {
         <span class="when">${esc(n.when)}</span>
         <h3>${esc(n.title)}</h3>
         <p>${linkPeople(esc(n.text), p.people)}</p>
-        ${n.link ? `<a href="${esc(n.link)}" target="_blank" rel="noopener">Read on LinkedIn →</a>` : ""}
+        ${n.link ? `<a href="${esc(n.link)}" target="_blank" rel="noopener">${esc(n.linkLabel || "Read on LinkedIn →")}</a>` : ""}
         <div class="tags">${(n.tags || []).map((t) => `<span>#${esc(t)}</span>`).join("")}</div>
       </div>
     </li>`;
@@ -162,7 +162,7 @@ const fixCase = (t) => (t && t === t.toUpperCase() && /[A-Z]{4}/.test(t))
 function applyOverrides(works, overrides) {
   (works || []).forEach((w) => {
     const o = (overrides || []).find((o) => w.title.toLowerCase().startsWith(o.match.toLowerCase()));
-    if (o) ["type", "venue", "year", "url"].forEach((k) => { if (o[k]) w[k] = o[k]; });
+    if (o) ["type", "venue", "year", "url", "links"].forEach((k) => { if (o[k]) w[k] = o[k]; });
   });
   return (works || []).sort((a, b) => String(b.year || "0").localeCompare(String(a.year || "0")));
 }
@@ -187,6 +187,7 @@ function renderPubs(works, updated) {
         <div>
           <div class="pub-title">${w.url ? `<a href="${esc(w.url)}" target="_blank" rel="noopener">${esc(w.title)}</a>` : esc(w.title)}</div>
           <div class="pub-venue">${esc(w.venue)}${w.type ? `<span class="tag">${esc(w.type)}</span>` : ""}</div>
+          ${(w.links || []).length ? `<div class="pub-links">${w.links.map((l) => `<a href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label)}</a>`).join("")}</div>` : ""}
         </div>
       </li>`).join("");
   };

@@ -183,3 +183,4 @@ section[id] { margin-bottom: 64px; }
 .plus-m { display: none !important; }
 @media (max-width: 680px) { .plus-m { display: grid !important; } }
 @media (max-width: 680px) { .plus.plus-m { inset: auto 6px 6px auto; padding: 2px 8px; border-radius: 999px; font-size: .8rem; } }
+.pub-links { display: flex; gap: 14px; margin-top: 4px; font-size: .85rem; font-weight: 500; }

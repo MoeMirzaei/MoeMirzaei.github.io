@@ -76,8 +76,8 @@
       "when": "Aug 2023 – May 2025",
       "text": "Evaluated the Gainesville Pedestrian-Bicyclist Connected Vehicle Pilot: passive pedestrian detection, CV communication reliability, and user views of the smartphone app through focus groups and experiments. Worked with roadside units, on-board units, TravelSafely/Glance and Bosch cameras, alongside vendors (Yunex, Applied Information, Bosch) and FDOT.",
       "link": {
-        "label": "Final report",
-        "url": "https://rosap.ntl.bts.gov/view/dot/93277"
+        "label": "Final report (TRID)",
+        "url": "https://trid.trb.org/View/2775408"
       },
       "image": "assets/img/istreet.jpg"
     },
@@ -222,7 +222,23 @@
     {
       "match": "evaluation of gainesville",
       "type": "technical report",
-      "url": "https://rosap.ntl.bts.gov/view/dot/93277"
+      "url": "https://rosap.ntl.bts.gov/view/dot/93277",
+      "year": "2025",
+      "venue": "Final Report BED31-977-23, Florida Department of Transportation · Elefteriadou, Manjunatha, Mirzaei, Favero",
+      "links": [
+        {
+          "label": "TRID",
+          "url": "https://trid.trb.org/View/2775408"
+        },
+        {
+          "label": "FDOT PDF",
+          "url": "https://fdotwww.blob.core.windows.net/sitefinity/docs/default-source/research/reports/fdot-bed31-977-23-rpt.pdf"
+        },
+        {
+          "label": "ROSA P",
+          "url": "https://rosap.ntl.bts.gov/view/dot/93277"
+        }
+      ]
     }
   ],
   "subtitle2": "Ph.D. Student · Graduate Research Assistant",
@@ -255,6 +271,13 @@
     },
     {
       "role": "Poster: Evaluation of the Gainesville Pedestrian-Bicyclists Connected Vehicle Pilot",
+      "org": "UFTI Industry Partnership Program meeting, I-STREET Living Lab, University of Florida",
+      "when": "Nov 19, 2024",
+      "file": "https://www.transportation.institute.ufl.edu/2024/11/26/ufti-unveils-wall-of-partners-at-industry-meeting-launches-i-street-innovator-webinar-series/",
+      "fileLabel": "Read article →"
+    },
+    {
+      "role": "Poster: Evaluation of the Gainesville Pedestrian-Bicyclists Connected Vehicle Pilot",
       "org": "Florida Automated Vehicles (FAV) Summit 2024",
       "when": "Sep 2024"
     },
@@ -262,6 +285,11 @@
       "role": "Presentation: Evaluation of the Gainesville Pedestrian-Bicyclists Connected Vehicle Pilot",
       "org": "Transpo 2024, ITE Florida-Puerto Rico District & ITS Florida",
       "when": "Aug 2024"
+    },
+    {
+      "role": "Podium presentation (primary author): Evaluation of Gainesville Pedestrian-Bicyclist's Connected Vehicle Pilot",
+      "org": "ASCE International Conference on Transportation & Development (ICTD) 2024 with APM-ATS 2024, Atlanta · CAV Impacts session",
+      "when": "Jun 17, 2024"
     }
   ],
   "memberships": [
@@ -407,6 +435,22 @@
         "assets/news/trb2025-4.jpg"
       ],
       "date": "2025-01-07"
+    },
+    {
+      "title": "Poster at UFTI Industry Partnership meeting",
+      "when": "Nov 2024",
+      "date": "2024-11-19",
+      "text": "Presented our Gainesville connected vehicle pilot poster to industry partners as UFTI unveiled its Wall of Partners and launched the I-STREET Innovator Webinar Series.",
+      "tags": [
+        "UFTI",
+        "I-STREET",
+        "Poster"
+      ],
+      "images": [
+        "https://www.transportation.institute.ufl.edu/wp-content/uploads/sites/203/2024/11/20241119_091110-1024x768.jpg"
+      ],
+      "link": "https://www.transportation.institute.ufl.edu/2024/11/26/ufti-unveils-wall-of-partners-at-industry-meeting-launches-i-street-innovator-webinar-series/",
+      "linkLabel": "Read UFTI article →"
     },
     {
       "title": "First Coast ITE meeting in Gainesville",
