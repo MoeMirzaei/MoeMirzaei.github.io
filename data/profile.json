@@ -1,0 +1,69 @@
+{
+  "_note": "Edit this file by hand. LinkedIn can't be read automatically, so keep your experience here. Publications come from ORCID automatically.",
+  "name": "Moe Mirzaei",
+  "fullName": "Mohammadreza Mirzaei",
+  "title": "Ph.D. Student · Transportation Engineering",
+  "affiliation": "Penn State Harrisburg",
+  "tagline": "I study traffic safety, traffic operations and human factors, using data, computer vision and Intelligent Transportation Systems (ITS).",
+  "photo": "assets/img/graduation.jpg",
+  "interests": ["Traffic Safety", "Traffic Operations", "Human Factors", "Intelligent Transportation Systems", "Connected Vehicles", "Computer Vision", "Optimization"],
+  "skills": ["Python", "R", "R Shiny", "Deep Learning", "YOLO / Deep SORT", "Data Visualization"],
+  "links": {
+    "orcid": "https://orcid.org/0000-0002-8083-2653",
+    "wos": "https://www.webofscience.com/wos/author/record/QYQ-9915-2026",
+    "linkedin": "https://www.linkedin.com/in/moe-mirzaei/",
+    "github": "https://github.com/MoeMirzaei"
+  },
+  "experience": [
+    {
+      "role": "Ph.D. Student & Graduate Research Assistant",
+      "org": "Penn State Harrisburg — Engineering and Computing Systems",
+      "when": "Now",
+      "text": "Research on traffic safety, traffic operations and human factors."
+    },
+    {
+      "role": "ITS Traffic Engineer",
+      "org": "AtkinsRéalis — FDOT District Two, Northeast Florida",
+      "when": "",
+      "text": "Worked on FDOT's ITS projects: connected vehicle deployments, the Truck Parking Availability System (TPAS), rail crossing, drawbridge and wrong-way vehicle detection, and video analytics.",
+      "image": "assets/img/atkinsrealis.jpg"
+    },
+    {
+      "role": "M.S. Civil Engineering & Graduate Research Assistant",
+      "org": "University of Florida — I-STREET Lab",
+      "when": "",
+      "text": "Evaluated the Gainesville Pedestrian-Bicyclist Connected Vehicle Pilot. Worked with technology vendors, FDOT and the City of Gainesville, and wrote technical reports.",
+      "link": {"label": "Final report", "url": "https://rosap.ntl.bts.gov/view/dot/93277"},
+      "image": "assets/img/istreet.jpg"
+    },
+    {
+      "role": "Research — Inferring Vehicle Speeds from Video",
+      "org": "with Prof. Kara Kockelman, UT Austin",
+      "when": "",
+      "text": "Detected, tracked and recognized vehicles in camera footage with YOLOv4 and Deep SORT, and measured their speeds, make and model.",
+      "link": {"label": "Paper (TRB 2024)", "url": "https://caee.webhost.utexas.edu/prof/Kockelman/public_html/TRB24InferringVehicleSpeeds.pdf"},
+      "image": "assets/img/researchkara.jpg"
+    },
+    {
+      "role": "Quantitative Developer, Business Development & Risk Management",
+      "org": "Ramzinex",
+      "when": "",
+      "text": "Built Python, data science and AI tools while solving fast-moving business problems.",
+      "image": "assets/img/ramzinex.jpg"
+    },
+    {
+      "role": "B.S. Civil Engineering",
+      "org": "Sharif University of Technology",
+      "when": "",
+      "text": "Thesis with Dr. Amir Samimi on urban freight problems (vehicle routing and pickup-and-delivery with time windows, capacity and multiple depots). Built an R Shiny dashboard to solve them.",
+      "image": "assets/img/bachelorthesis.jpg"
+    },
+    {
+      "role": "Data Analyst Intern",
+      "org": "Roads and Transportation Information Management Center",
+      "when": "",
+      "text": "Wrote Python code with data visualization to find faulty traffic counters, and reviewed traffic and speed camera systems in other countries.",
+      "image": "assets/img/internship.jpg"
+    }
+  ]
+}
