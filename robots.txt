@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://moemirzaei.github.io/sitemap.xml
