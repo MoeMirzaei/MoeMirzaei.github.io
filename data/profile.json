@@ -36,10 +36,30 @@
     "linkedin": "https://www.linkedin.com/in/moe-mirzaei/",
     "github": "https://github.com/MoeMirzaei"
   },
+  "education": [
+    {
+      "degree": "Ph.D., Engineering and Computing Systems",
+      "school": "Penn State Harrisburg",
+      "when": "2026 – Present",
+      "note": "Advisor: Dr. Agnimitra Sengupta"
+    },
+    {
+      "degree": "M.S., Civil/Transportation Engineering",
+      "school": "University of Florida, Gainesville",
+      "when": "2023 – 2025",
+      "note": "GPA 4.0/4.0"
+    },
+    {
+      "degree": "B.S., Civil Engineering",
+      "school": "Sharif University of Technology, Tehran",
+      "when": "2017 – 2021",
+      "note": "GPA 3.4/4.0"
+    }
+  ],
   "experience": [
     {
-      "role": "Ph.D. Student & Graduate Research Assistant",
-      "org": "Penn State Harrisburg — Engineering and Computing Systems, with Dr. Agnimitra Sengupta",
+      "role": "Graduate Research Assistant",
+      "org": "Penn State Harrisburg, with Dr. Agnimitra Sengupta",
       "when": "Aug 2026 – Present",
       "text": "Research on traffic safety and operations, and AI applications in transportation engineering."
     },
@@ -51,10 +71,10 @@
       "image": "assets/img/atkinsrealis.jpg"
     },
     {
-      "role": "M.S. Civil/Transportation Engineering (GPA 4.0) & Graduate Research Assistant",
-      "org": "University of Florida — I-STREET Lab, with Dr. Lily Elefteriadou & Dr. Pruthvi Manjunatha",
+      "role": "Graduate Research Assistant (I-STREET Lab)",
+      "org": "University of Florida Transportation Institute, with Dr. Lily Elefteriadou & Dr. Pruthvi Manjunatha",
       "when": "Aug 2023 – May 2025",
-      "text": "Evaluated the Gainesville Pedestrian-Bicyclist Connected Vehicle Pilot: passive pedestrian detection, CV communication reliability, and user views of the smartphone app through focus groups and experiments. Worked with roadside units, on-board units, TravelSafely/Glance and Bosch cameras, alongside vendors (Yunex, Applied Information, Bosch) and FDOT. Teaching assistant for Transportation Engineering (2024).",
+      "text": "Evaluated the Gainesville Pedestrian-Bicyclist Connected Vehicle Pilot: passive pedestrian detection, CV communication reliability, and user views of the smartphone app through focus groups and experiments. Worked with roadside units, on-board units, TravelSafely/Glance and Bosch cameras, alongside vendors (Yunex, Applied Information, Bosch) and FDOT.",
       "link": {
         "label": "Final report",
         "url": "https://rosap.ntl.bts.gov/view/dot/93277"
@@ -80,10 +100,10 @@
       "image": "assets/img/ramzinex.jpg"
     },
     {
-      "role": "B.S. Civil Engineering & Research Assistant",
-      "org": "Sharif University of Technology",
-      "when": "2017 – 2021",
-      "text": "Research with Dr. Amir Samimi on urban freight: vehicle routing (VRP) and pickup-and-delivery (PDP) problems. Built a dashboard that solves them with Genetic Algorithm and Simulated Annealing in Python and R. TA for Python Programming and for Engineering Probability & Statistics.",
+      "role": "Research Assistant",
+      "org": "Sharif University of Technology, with Dr. Amir Samimi",
+      "when": "Aug 2020 – Sep 2021",
+      "text": "Studied urban freight problems: vehicle routing (VRP) and pickup-and-delivery (PDP). Built a dashboard that solves them with Genetic Algorithm and Simulated Annealing in Python and R.",
       "image": "assets/img/bachelorthesis.jpg"
     },
     {
@@ -94,8 +114,23 @@
       "image": "assets/img/internship.jpg"
     }
   ],
-  "cv": "assets/CV-MoeMirzaei.pdf",
-  "languages": "English, Persian, Azerbaijani",
+  "teaching": [
+    {
+      "role": "Transportation Engineering",
+      "org": "Dr. Pruthvi Manjunatha, University of Florida",
+      "when": "Oct 2024"
+    },
+    {
+      "role": "Python Programming",
+      "org": "Dr. Elham Seifossadat, Sharif University of Technology",
+      "when": "Feb 2020 – Oct 2021"
+    },
+    {
+      "role": "Engineering Probability & Statistics",
+      "org": "Dr. Hatef Abdoos, Sharif University of Technology",
+      "when": "Sep 2019 – Dec 2019"
+    }
+  ],
   "leadership": [
     {
       "role": "Director of Communication, Penn State ITE",
@@ -130,6 +165,8 @@
       "when": "Oct 2025"
     }
   ],
+  "languages": "English, Persian, Azerbaijani",
+  "cv": "assets/CV-MoeMirzaei.pdf",
   "email": "mpm7767@psu.edu",
   "pubOverrides": [
     {

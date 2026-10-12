@@ -44,6 +44,12 @@ function renderProfile(p) {
     `<li><div><b>${esc(l.role)}</b><br><span>${esc(l.org)}</span></div><span>${esc(l.when)}</span></li>`).join("");
   $("leadership").innerHTML = rows(p.leadership);
   $("certificates").innerHTML = rows(p.certificates);
+  $("teaching").innerHTML = rows(p.teaching);
+  $("edu").innerHTML = (p.education || []).map((e) => `
+    <li>
+      <div><h3>${esc(e.degree)}</h3><div class="school">${esc(e.school)}</div>${e.note ? `<div class="note">${esc(e.note)}</div>` : ""}</div>
+      <div class="when">${esc(e.when)}</div>
+    </li>`).join("");
   if (p.email) { $("contact-email").href = `mailto:${p.email}`; $("contact-email").textContent = p.email; }
   if (p.languages) $("languages").textContent = `Languages: ${p.languages}`;
 
