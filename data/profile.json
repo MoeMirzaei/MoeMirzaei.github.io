@@ -325,9 +325,21 @@
         "AtkinsRéalis"
       ],
       "images": [
-        "assets/news/uf-career-week-1.jpg",
-        "assets/news/uf-career-week-2.jpg",
-        "assets/news/uf-career-week-3.jpg"
+        "assets/news/uf-career-week-1.jpg"
+      ]
+    },
+    {
+      "title": "AtkinsRéalis at ESSIE, University of Florida",
+      "when": "2025",
+      "text": "Represented AtkinsRéalis with Antonio Del Mastro, P.E., at an Engineering School of Sustainable Infrastructure & Environment (ESSIE) event at the University of Florida.",
+      "tags": [
+        "ESSIE",
+        "UF",
+        "AtkinsRéalis"
+      ],
+      "images": [
+        "assets/news/uf-essie-1.jpg",
+        "assets/news/uf-essie-2.jpg"
       ]
     },
     {
