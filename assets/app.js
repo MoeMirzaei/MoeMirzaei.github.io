@@ -38,7 +38,58 @@ function linkPeople(html, people) {
   return html;
 }
 
+// Photo viewer for News galleries
+const LB = { list: [], i: 0 };
+function lbShow() {
+  $("lb-img").src = LB.list[LB.i];
+  $("lb-count").textContent = LB.list.length > 1 ? `${LB.i + 1} / ${LB.list.length}` : "";
+}
+function lbOpen(list, i) { LB.list = list; LB.i = i; lbShow(); $("lightbox").hidden = false; document.body.style.overflow = "hidden"; }
+function lbClose() { $("lightbox").hidden = true; document.body.style.overflow = ""; }
+function lbStep(d) { LB.i = (LB.i + d + LB.list.length) % LB.list.length; lbShow(); }
+document.addEventListener("keydown", (e) => {
+  if ($("lightbox").hidden) return;
+  if (e.key === "Escape") lbClose(); else if (e.key === "ArrowLeft") lbStep(-1); else if (e.key === "ArrowRight") lbStep(1);
+});
+
+function renderNews(p) {
+  const posts = p.news || [], shown = p.newsShown || 3;
+  if (!posts.length) { $("news").hidden = true; return; }
+  if (p.linkedinActivity) $("li-activity").href = p.linkedinActivity;
+  const post = (n, k) => {
+    const imgs = n.images || [], vis = imgs.slice(0, 4), extra = imgs.length - vis.length;
+    const gal = vis.map((src, i) => `<button type="button" data-post="${k}" data-i="${i}" aria-label="Open photo ${i + 1} of ${imgs.length}"><img src="${esc(src)}" alt="" loading="lazy">${i === 3 && extra > 0 ? `<span class="plus">+${extra}</span>` : ""}</button>`).join("");
+    return `<li class="post">
+      ${imgs.length ? `<div class="gallery n${vis.length}">${gal}</div>` : ""}
+      <div class="post-body">
+        <span class="when">${esc(n.when)}</span>
+        <h3>${esc(n.title)}</h3>
+        <p>${linkPeople(esc(n.text), p.people)}</p>
+        ${n.link ? `<a href="${esc(n.link)}" target="_blank" rel="noopener">Read on LinkedIn →</a>` : ""}
+        <div class="tags">${(n.tags || []).map((t) => `<span>#${esc(t)}</span>`).join("")}</div>
+      </div>
+    </li>`;
+  };
+  const draw = (all) => { $("news-list").innerHTML = (all ? posts : posts.slice(0, shown)).map(post).join(""); };
+  draw(false);
+  $("news-list").addEventListener("click", (e) => {
+    const b = e.target.closest("button[data-post]"); if (!b) return;
+    lbOpen(posts[+b.dataset.post].images, +b.dataset.i);
+  });
+  if (posts.length > shown) {
+    const btn = $("news-more"); btn.hidden = false; let open = false;
+    btn.textContent = `See all ${posts.length} updates`;
+    btn.onclick = () => { open = !open; draw(open); btn.textContent = open ? "Show fewer" : `See all ${posts.length} updates`; };
+  }
+  const lb = $("lightbox");
+  lb.querySelector(".lb-close").onclick = lbClose;
+  lb.querySelector(".lb-prev").onclick = () => lbStep(-1);
+  lb.querySelector(".lb-next").onclick = () => lbStep(1);
+  lb.addEventListener("click", (e) => { if (e.target === lb) lbClose(); });
+}
+
 function renderProfile(p) {
+  renderNews(p);
   $("name").textContent = p.name;
   $("title").textContent = p.title;
   if (p.subtitle2) $("subtitle2").textContent = p.subtitle2;

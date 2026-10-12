@@ -47,6 +47,7 @@
     <div class="wrap nav-inner">
       <a class="brand" href="#top">Moe Mirzaei</a>
       <nav>
+        <a href="#news">News</a>
         <a href="#education">Education</a>
         <a href="#publications">Publications</a>
         <a href="#experience">Experience</a>
@@ -75,6 +76,12 @@
       <ul class="chips chips-quiet" id="skills"></ul>
       <h2 class="label label-gap">Languages</h2>
       <p class="langs" id="languages"></p>
+    </section>
+
+    <section class="wrap" id="news">
+      <div class="section-head"><h2>News &amp; Updates</h2><p class="meta"><a id="li-activity" href="https://www.linkedin.com/in/moe-mirzaei/recent-activity/all/" target="_blank" rel="noopener">More on LinkedIn →</a></p></div>
+      <ol class="news" id="news-list"></ol>
+      <button type="button" class="more-btn" id="news-more" hidden></button>
     </section>
 
     <section class="wrap" id="education">
@@ -136,6 +143,14 @@
   <footer class="wrap footer">
     <p>© <span id="year"></span> Mohammadreza (Moe) Mirzaei · Publications sync daily from ORCID (incl. Web of Science) · <span id="updated"></span></p>
   </footer>
+
+  <div class="lightbox" id="lightbox" hidden role="dialog" aria-modal="true" aria-label="Photo viewer">
+    <button type="button" class="lb-close" aria-label="Close">×</button>
+    <button type="button" class="lb-prev" aria-label="Previous photo">‹</button>
+    <img id="lb-img" alt="">
+    <button type="button" class="lb-next" aria-label="Next photo">›</button>
+    <p class="lb-count" id="lb-count"></p>
+  </div>
 
   <script src="assets/app.js"></script>
 </body>

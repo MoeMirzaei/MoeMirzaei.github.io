@@ -235,6 +235,11 @@
   "certificatesShown": 3,
   "talks": [
     {
+      "role": "Poster (co-author): Innovative Truck Parking Availability System (iTPAS)",
+      "org": "Transportation Research Board (TRB) 105th Annual Meeting, Washington, D.C.",
+      "when": "Jan 2026"
+    },
+    {
       "role": "Speaker, Vision Zero Open House 2025",
       "org": "City of Gainesville, Department of Transportation",
       "when": "Feb 26, 2025",
@@ -259,6 +264,89 @@
       "role": "Institute of Transportation Engineers (ITE)",
       "org": "Member",
       "when": "Sep 2023 – Present"
+    }
+  ],
+  "newsShown": 3,
+  "linkedinActivity": "https://www.linkedin.com/in/moe-mirzaei/recent-activity/all/",
+  "news": [
+    {
+      "title": "U.S. DOT Road Safety Innovation Expo",
+      "when": "2026",
+      "text": "Attended the U.S. Department of Transportation's Road Safety Innovation Expo in Washington, D.C., exploring the latest work in roadway safety, connected systems and emerging technologies, and connecting with professionals working toward safer, smarter transportation.",
+      "tags": [
+        "Safety",
+        "ITS",
+        "USDOT"
+      ],
+      "images": [
+        "assets/news/usdot-expo-1.jpg",
+        "assets/news/usdot-expo-2.jpg",
+        "assets/news/usdot-expo-3.jpg",
+        "assets/news/usdot-expo-4.jpg"
+      ]
+    },
+    {
+      "title": "iTPAS poster at TRB 2026",
+      "when": "Jan 2026",
+      "text": "Our team presented a poster on the Innovative Truck Parking Availability System (iTPAS) at the TRB Annual Meeting. iTPAS uses computer vision to monitor truck parking at Florida highway rest areas in real time and shares live availability through Florida 511 and dynamic message signs.",
+      "tags": [
+        "TRB",
+        "Computer Vision",
+        "Truck Parking"
+      ],
+      "images": [
+        "assets/news/trb2026-itpas-1.jpg"
+      ]
+    },
+    {
+      "title": "Florida Automated Vehicles (FAV) Summit 2025",
+      "when": "2025",
+      "text": "This year's summit focused on Advanced Air Mobility, with operations in Florida expected by the end of 2026. Other highlights included autonomous shuttles, trucks and trains, drone delivery, and Waymo's safety findings. Proud to be part of the AtkinsRéalis and FDOT District 2 team working on intelligent transportation systems.",
+      "tags": [
+        "Autonomous Vehicles",
+        "AAM",
+        "ITS"
+      ],
+      "images": [
+        "assets/news/fav-summit-2025-1.jpg",
+        "assets/news/fav-summit-2025-2.jpg",
+        "assets/news/fav-summit-2025-3.jpg",
+        "assets/news/fav-summit-2025-4.jpg",
+        "assets/news/fav-summit-2025-5.jpg",
+        "assets/news/fav-summit-2025-6.jpg"
+      ]
+    },
+    {
+      "title": "AtkinsRéalis at UF Career Week",
+      "when": "2025",
+      "text": "Back on campus at the University of Florida with the AtkinsRéalis team for Career Week Technical Day, meeting students interested in transportation and engineering careers.",
+      "tags": [
+        "Careers",
+        "AtkinsRéalis"
+      ],
+      "images": [
+        "assets/news/uf-career-week-1.jpg",
+        "assets/news/uf-career-week-2.jpg",
+        "assets/news/uf-career-week-3.jpg"
+      ]
+    },
+    {
+      "title": "Graduated with an M.S. from the University of Florida",
+      "when": "May 2025",
+      "text": "Completed my Master's in Civil Engineering (Transportation) at UF. As a Graduate Research Assistant I worked on the Gainesville Pedestrian and Bicyclist Connected Vehicle Pilot with FDOT, the City of Gainesville and technology vendors. Thank you to my advisors, Dr. Lily Elefteriadou and Dr. Pruthvi Manjunatha, and to my wife and family for their support. Go Gators!",
+      "tags": [
+        "Graduation",
+        "UF",
+        "Connected Vehicles"
+      ],
+      "images": [
+        "assets/news/uf-graduation-1.jpg",
+        "assets/news/uf-graduation-2.jpg",
+        "assets/news/uf-graduation-3.jpg",
+        "assets/news/uf-graduation-4.jpg",
+        "assets/news/uf-graduation-5.jpg",
+        "assets/news/uf-graduation-6.jpg"
+      ]
     }
   ]
 }
