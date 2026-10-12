@@ -153,19 +153,43 @@
       "role": "IMSA Traffic Signal Technician I",
       "org": "International Municipal Signal Association · ID AA_150495",
       "when": "Mar 2026 – Mar 2029",
-      "file": ""
+      "file": "assets/certificates/imsa-traffic-signal-tech-1.pdf"
     },
     {
       "role": "Advanced Temporary Traffic Control (TTC) / Maintenance of Traffic (MOT)",
       "org": "Florida Department of Transportation · ID 649038",
       "when": "Oct 2025 – Oct 2029",
-      "file": ""
+      "file": "assets/certificates/fdot-ttc-mot-advanced.pdf"
     },
     {
-      "role": "NEMA Troubleshooting Program",
+      "role": "NEMA TS 1 Troubleshooting (16 hours)",
       "org": "East Coast Training Alliance",
       "when": "Oct 2025",
-      "file": ""
+      "file": "assets/certificates/nema-ts1-troubleshooting.pdf"
+    },
+    {
+      "role": "Traffic Signal Timing 101: Basics of Local Intersection Control (Parts 1–3)",
+      "org": "Florida LTAP Center (CUTR) · 6 hours",
+      "when": "Jul 2025",
+      "file": "assets/certificates/signal-timing-101.pdf"
+    },
+    {
+      "role": "OSHA 10-Hour Construction",
+      "org": "OSHA Outreach Training Program · Vector Solutions",
+      "when": "Jun 2025",
+      "file": "assets/certificates/osha-10-construction.pdf"
+    },
+    {
+      "role": "Unlocking Cost Mastery: Pricing Dashboards",
+      "org": "Florida LTAP Center (CUTR) · 90 minutes",
+      "when": "Dec 2025",
+      "file": "assets/certificates/ltap-cost-mastery-pricing-dashboards.pdf"
+    },
+    {
+      "role": "Dealing with Burnout",
+      "org": "Florida LTAP Center (CUTR) · 90 minutes",
+      "when": "Dec 2025",
+      "file": "assets/certificates/ltap-dealing-with-burnout.pdf"
     }
   ],
   "languages": "English, Persian, Azerbaijani",
