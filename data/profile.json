@@ -184,6 +184,27 @@
       "org": "Florida LTAP Center (CUTR) · 90 minutes",
       "when": "Dec 2025",
       "file": "assets/certificates/ltap-cost-mastery-pricing-dashboards.pdf"
+    },
+    {
+      "role": "SQL",
+      "org": "Sololearn · ID CT-EP8F7HWU",
+      "when": "Nov 2022",
+      "file": "https://www.sololearn.com/certificates/CT-EP8F7HWU",
+      "fileLabel": "View credential →"
+    },
+    {
+      "role": "Machine Learning",
+      "org": "Sololearn · ID CT-GG3QWVTC",
+      "when": "Aug 2022",
+      "file": "https://www.sololearn.com/certificates/course/en/26701028/1094/landscape/png",
+      "fileLabel": "View credential →"
+    },
+    {
+      "role": "Data Science and Machine Learning for Beginners with Python",
+      "org": "Udemy · ID UC-3ed00e25-5102-4e21-bec6-a8e4a4bcb910",
+      "when": "Sep 2020",
+      "file": "https://www.udemy.com/certificate/UC-3ed00e25-5102-4e21-bec6-a8e4a4bcb910/",
+      "fileLabel": "View credential →"
     }
   ],
   "languages": "English, Persian, Azerbaijani",
