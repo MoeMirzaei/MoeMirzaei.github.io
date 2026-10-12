@@ -248,8 +248,8 @@
     },
     {
       "role": "Poster: Evaluation of the Gainesville Pedestrian-Bicyclists Connected Vehicle Pilot",
-      "org": "with Dr. Pruthvi Manjunatha, Dr. Lily Elefteriadou & Dr. Siva Srinivasan · UF Transportation Institute",
-      "when": "2025",
+      "org": "Vision Zero Open House 2025, City of Gainesville · with Dr. Pruthvi Manjunatha, Dr. Lily Elefteriadou & Dr. Siva Srinivasan",
+      "when": "Feb 2025",
       "file": "assets/talks/gainesville-cv-pilot-poster.jpg",
       "fileLabel": "View poster →"
     }
@@ -358,6 +358,66 @@
         "assets/news/uf-graduation-4.jpg",
         "assets/news/uf-graduation-5.jpg",
         "assets/news/uf-graduation-6.jpg"
+      ]
+    },
+    {
+      "title": "Speaker at the Vision Zero Open House",
+      "when": "Feb 2025",
+      "text": "Presented at the City of Gainesville's Vision Zero Open House with the Gator ITE team, sharing our connected vehicle pilot work and discussing pedestrian and bicyclist safety with professionals and community members. Thank you to Dr. Karla Rodrigues-Silva, Dr. Pruthvi Manjunatha and Dr. Lily Elefteriadou for the opportunity.",
+      "tags": [
+        "Vision Zero",
+        "Pedestrian Safety",
+        "Gator ITE"
+      ],
+      "images": [
+        "assets/news/vision-zero-2025-1.jpg",
+        "assets/news/vision-zero-2025-2.jpg",
+        "assets/news/vision-zero-2025-3.jpg"
+      ]
+    },
+    {
+      "title": "TRB Annual Meeting 2025",
+      "when": "Jan 2025",
+      "text": "Attended the Transportation Research Board Annual Meeting in Washington, D.C.: reconnecting with friends, networking with professionals and professors, and learning from poster and presentation sessions on the latest transportation research.",
+      "tags": [
+        "TRB",
+        "Research"
+      ],
+      "images": [
+        "assets/news/trb2025-1.jpg",
+        "assets/news/trb2025-2.jpg",
+        "assets/news/trb2025-3.jpg",
+        "assets/news/trb2025-4.jpg"
+      ]
+    },
+    {
+      "title": "First Coast ITE meeting in Gainesville",
+      "when": "Sep 2024",
+      "text": "Joined the First Coast Chapter of ITE meeting and social at Depot Park, with presentations from FDOT and the City of Gainesville on upcoming safety projects in the city and county.",
+      "tags": [
+        "ITE",
+        "Safety",
+        "Networking"
+      ],
+      "images": [
+        "assets/news/first-coast-ite-2024-1.jpg"
+      ]
+    },
+    {
+      "title": "Gator ITE General Body Meeting",
+      "when": "Sep 2024",
+      "text": "Introduced ITE and the Gator ITE chapter to UF students, shared our past work and upcoming events, and presented my research on the Gainesville connected vehicle pilot and the TravelSafely app.",
+      "tags": [
+        "Gator ITE",
+        "Connected Vehicles",
+        "UF"
+      ],
+      "images": [
+        "assets/news/gator-ite-gbm-2024-1.jpg",
+        "assets/news/gator-ite-gbm-2024-2.jpg",
+        "assets/news/gator-ite-gbm-2024-3.jpg",
+        "assets/news/gator-ite-gbm-2024-4.jpg",
+        "assets/news/gator-ite-gbm-2024-5.jpg"
       ]
     }
   ]
