@@ -253,38 +253,44 @@
     {
       "role": "Poster (co-author): Innovative Truck Parking Availability System (iTPAS)",
       "org": "Transportation Research Board (TRB) 105th Annual Meeting, Washington, D.C.",
-      "when": "Jan 2026"
+      "when": "Jan 2026",
+      "news": "trb-2026-itpas"
     },
     {
       "role": "Speaker, Vision Zero Open House 2025",
       "org": "City of Gainesville, Department of Transportation",
       "when": "Feb 26, 2025",
       "file": "assets/talks/vision-zero-2025-speaker.jpg",
-      "fileLabel": "View certificate →"
+      "fileLabel": "View certificate →",
+      "news": "vision-zero-2025"
     },
     {
       "role": "Poster: Evaluation of the Gainesville Pedestrian-Bicyclists Connected Vehicle Pilot",
       "org": "Vision Zero Open House 2025, City of Gainesville · with Dr. Pruthvi Manjunatha, Dr. Lily Elefteriadou & Dr. Siva Srinivasan",
       "when": "Feb 2025",
       "file": "assets/talks/gainesville-cv-pilot-poster.jpg",
-      "fileLabel": "View poster →"
+      "fileLabel": "View poster →",
+      "news": "vision-zero-2025"
     },
     {
       "role": "Poster: Evaluation of the Gainesville Pedestrian-Bicyclists Connected Vehicle Pilot",
       "org": "UFTI Industry Partnership Program meeting, I-STREET Living Lab, University of Florida",
       "when": "Nov 19, 2024",
       "file": "https://www.transportation.institute.ufl.edu/2024/11/26/ufti-unveils-wall-of-partners-at-industry-meeting-launches-i-street-innovator-webinar-series/",
-      "fileLabel": "Read article →"
+      "fileLabel": "Read article →",
+      "news": "ufti-2024"
     },
     {
       "role": "Poster: Evaluation of the Gainesville Pedestrian-Bicyclists Connected Vehicle Pilot",
       "org": "Florida Automated Vehicles (FAV) Summit 2024",
-      "when": "Sep 2024"
+      "when": "Sep 2024",
+      "news": "fav-2024"
     },
     {
       "role": "Presentation: Evaluation of the Gainesville Pedestrian-Bicyclists Connected Vehicle Pilot",
       "org": "Transpo 2024, ITE Florida-Puerto Rico District & ITS Florida",
-      "when": "Aug 2024"
+      "when": "Aug 2024",
+      "news": "transpo-2024"
     },
     {
       "role": "Podium presentation (primary author): Evaluation of Gainesville Pedestrian-Bicyclist's Connected Vehicle Pilot",
@@ -322,7 +328,8 @@
         "assets/news/usdot-expo-3.jpg",
         "assets/news/usdot-expo-4.jpg"
       ],
-      "date": "2026-09-20"
+      "date": "2026-09-20",
+      "id": "2026-09-20-usdotroadsafetyinnov"
     },
     {
       "title": "AtkinsRéalis at ESSIE, University of Florida",
@@ -337,7 +344,8 @@
         "assets/news/uf-essie-1.jpg",
         "assets/news/uf-essie-2.jpg"
       ],
-      "date": "2026-02-04"
+      "date": "2026-02-04",
+      "id": "2026-02-04-atkinsréalisatessieu"
     },
     {
       "title": "iTPAS poster at TRB 2026",
@@ -351,7 +359,8 @@
       "images": [
         "assets/news/trb2026-itpas-1.jpg"
       ],
-      "date": "2026-01-15"
+      "date": "2026-01-15",
+      "id": "trb-2026-itpas"
     },
     {
       "title": "Florida Automated Vehicles (FAV) Summit 2025",
@@ -370,7 +379,8 @@
         "assets/news/fav-summit-2025-5.jpg",
         "assets/news/fav-summit-2025-6.jpg"
       ],
-      "date": "2025-11-09"
+      "date": "2025-11-09",
+      "id": "2025-11-09-floridaautomatedvehi"
     },
     {
       "title": "AtkinsRéalis at UF Career Week",
@@ -383,7 +393,8 @@
       "images": [
         "assets/news/uf-career-week-1.jpg"
       ],
-      "date": "2025-10-01"
+      "date": "2025-10-01",
+      "id": "2025-10-01-atkinsréalisatufcare"
     },
     {
       "title": "Graduated with an M.S. from the University of Florida",
@@ -402,7 +413,8 @@
         "assets/news/uf-graduation-5.jpg",
         "assets/news/uf-graduation-6.jpg"
       ],
-      "date": "2025-05-01"
+      "date": "2025-05-01",
+      "id": "2025-05-01-graduatedwithanmsfro"
     },
     {
       "title": "Speaker at the Vision Zero Open House",
@@ -418,7 +430,8 @@
         "assets/news/vision-zero-2025-2.jpg",
         "assets/news/vision-zero-2025-3.jpg"
       ],
-      "date": "2025-02-26"
+      "date": "2025-02-26",
+      "id": "vision-zero-2025"
     },
     {
       "title": "TRB Annual Meeting 2025",
@@ -434,7 +447,8 @@
         "assets/news/trb2025-3.jpg",
         "assets/news/trb2025-4.jpg"
       ],
-      "date": "2025-01-07"
+      "date": "2025-01-07",
+      "id": "2025-01-07-trbannualmeeting2025"
     },
     {
       "title": "Poster at UFTI Industry Partnership meeting",
@@ -451,7 +465,8 @@
         "assets/news/ufti-ipp-2024-2.jpg"
       ],
       "link": "https://www.transportation.institute.ufl.edu/2024/11/26/ufti-unveils-wall-of-partners-at-industry-meeting-launches-i-street-innovator-webinar-series/",
-      "linkLabel": "Read UFTI article →"
+      "linkLabel": "Read UFTI article →",
+      "id": "ufti-2024"
     },
     {
       "title": "First Coast ITE meeting in Gainesville",
@@ -465,7 +480,8 @@
       "images": [
         "assets/news/first-coast-ite-2024-1.jpg"
       ],
-      "date": "2024-09-19"
+      "date": "2024-09-19",
+      "id": "2024-09-19-firstcoastitemeeting"
     },
     {
       "title": "Gator ITE General Body Meeting",
@@ -483,7 +499,8 @@
         "assets/news/gator-ite-gbm-2024-4.jpg",
         "assets/news/gator-ite-gbm-2024-5.jpg"
       ],
-      "date": "2024-09-12"
+      "date": "2024-09-12",
+      "id": "2024-09-12-gatoritegeneralbodym"
     },
     {
       "title": "Poster presenter at FAV Summit 2024",
@@ -497,7 +514,8 @@
       "images": [
         "assets/news/fav-summit-2024-1.jpg",
         "assets/news/fav-summit-2024-2.jpg"
-      ]
+      ],
+      "id": "fav-2024"
     },
     {
       "title": "Presented at Transpo 2024 · Gator ITE named Chapter of the Year",
@@ -513,7 +531,8 @@
         "assets/news/transpo-2024-1.jpg",
         "assets/news/transpo-2024-2.jpg",
         "assets/news/transpo-2024-3.jpg"
-      ]
+      ],
+      "id": "transpo-2024"
     },
     {
       "title": "Seminar by Dr. Fred Mannering on AI and highway safety",
@@ -529,7 +548,8 @@
         "assets/news/mannering-seminar-2024-1.jpg",
         "assets/news/mannering-seminar-2024-2.jpg",
         "assets/news/mannering-seminar-2024-3.jpg"
-      ]
+      ],
+      "id": "2024-04-11-seminarbydrfredmanne"
     },
     {
       "title": "ITE Student Leadership Summit (SLS 2024)",
@@ -552,7 +572,8 @@
         "assets/news/sls-2024-8.jpg",
         "assets/news/sls-2024-9.jpg",
         "assets/news/sls-2024-10.jpg"
-      ]
+      ],
+      "id": "2024-02-10-itestudentleadership"
     }
   ]
 }

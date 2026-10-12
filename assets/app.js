@@ -59,7 +59,7 @@ function renderNews(p) {
   const post = (n, k) => {
     const imgs = n.images || [], vis = imgs.slice(0, 4), extra = imgs.length - vis.length;
     const gal = vis.map((src, i) => `<button type="button" data-post="${k}" data-i="${i}" aria-label="Open photo ${i + 1} of ${imgs.length}"><img src="${esc(src)}" alt="" loading="lazy">${i === 3 && extra > 0 ? `<span class="plus">+${extra}</span>` : ""}${i === 0 && imgs.length > 1 ? `<span class="plus plus-m">+${imgs.length - 1}</span>` : ""}</button>`).join("");
-    return `<li class="post">
+    return `<li class="post" id="news-${esc(n.id || "")}">
       ${imgs.length ? `<div class="gallery n${vis.length}">${gal}</div>` : ""}
       <div class="post-body">
         <span class="when">${esc(n.when)}</span>
@@ -76,11 +76,21 @@ function renderNews(p) {
     const b = e.target.closest("button[data-post]"); if (!b) return;
     lbOpen(posts[+b.dataset.post].images, +b.dataset.i);
   });
-  if (posts.length > shown) {
-    const btn = $("news-more"); btn.hidden = false; let open = false;
-    btn.textContent = `See all ${posts.length} updates`;
-    btn.onclick = () => { open = !open; draw(open); btn.textContent = open ? "Show fewer" : `See all ${posts.length} updates`; };
-  }
+  let open = false;
+  const btn = $("news-more");
+  const setOpen = (v) => { open = v; draw(open); btn.textContent = open ? "Show fewer" : `See all ${posts.length} updates`; };
+  if (posts.length > shown) { btn.hidden = false; setOpen(false); btn.onclick = () => setOpen(!open); }
+  // Jump from a talk/poster card to its news post
+  window.goToNews = (id) => {
+    if (!open && posts.length > shown) setOpen(true);
+    const el = document.getElementById(`news-${id}`); if (!el) return;
+    el.scrollIntoView({ behavior: "smooth", block: "center" });
+    el.classList.remove("flash"); void el.offsetWidth; el.classList.add("flash");
+  };
+  document.addEventListener("click", (e) => {
+    const a = e.target.closest("a[data-news]"); if (!a) return;
+    e.preventDefault(); window.goToNews(a.dataset.news);
+  });
   const lb = $("lightbox");
   lb.querySelector(".lb-close").onclick = lbClose;
   lb.querySelector(".lb-prev").onclick = () => lbStep(-1);
@@ -101,7 +111,7 @@ function renderProfile(p) {
   $("contact-linkedin").href = p.links.linkedin;
   $("skills").innerHTML = (p.skills || []).map((s) => `<li>${esc(s)}</li>`).join("");
   const L = (t) => linkPeople(esc(t), p.people);
-  const card = (l) => `<li><b>${esc(l.role)}</b><span class="org">${L(l.org)}</span>${l.file ? `<a class="view" href="${esc(l.file)}" target="_blank" rel="noopener">${esc(l.fileLabel || "View certificate →")}</a>` : ""}<span class="when">${esc(l.when)}</span></li>`;
+  const card = (l) => `<li><b>${esc(l.role)}</b><span class="org">${L(l.org)}</span>${l.file ? `<a class="view" href="${esc(l.file)}" target="_blank" rel="noopener">${esc(l.fileLabel || "View certificate →")}</a>` : ""}${l.news ? `<a class="view" href="#news-${esc(l.news)}" data-news="${esc(l.news)}">See photos in News →</a>` : ""}<span class="when">${esc(l.when)}</span></li>`;
   $("teaching").innerHTML = (p.teaching || []).map(card).join("");
   $("leadership").innerHTML = (p.leadership || []).map(card).join("");
   $("talks").innerHTML = (p.talks || []).map(card).join("");
