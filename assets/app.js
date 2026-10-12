@@ -83,6 +83,14 @@ const fixCase = (t) => (t && t === t.toUpperCase() && /[A-Z]{4}/.test(t))
   ? t.toLowerCase().replace(/(^|[:.?!]\s+)([a-z])/g, (m, a, b) => a + b.toUpperCase())
   : t;
 
+function applyOverrides(works, overrides) {
+  (works || []).forEach((w) => {
+    const o = (overrides || []).find((o) => w.title.toLowerCase().startsWith(o.match.toLowerCase()));
+    if (o) ["type", "venue", "year", "url"].forEach((k) => { if (o[k]) w[k] = o[k]; });
+  });
+  return (works || []).sort((a, b) => String(b.year || "0").localeCompare(String(a.year || "0")));
+}
+
 function renderPubs(works, updated) {
   (works || []).forEach((w) => { w.title = fixCase(w.title); });
   const list = $("pubs");
@@ -129,5 +137,5 @@ function renderPubs(works, updated) {
 
   let works = orcid?.works;
   if (!works || !works.length) works = await liveOrcidWorks();
-  renderPubs(works, orcid?.updated);
+  renderPubs(applyOverrides(works, profile?.pubOverrides), orcid?.updated);
 })();

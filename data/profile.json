@@ -72,6 +72,13 @@
       "image": "assets/img/researchkara.jpg"
     },
     {
+      "role": "Quantitative Developer, Business Development & Risk Management Specialist",
+      "org": "Ramzinex",
+      "when": "May 2021 – Aug 2023",
+      "text": "Built new features for a crypto exchange: AI trading bots, a top-10 crypto portfolio (Ramz Box), arbitrage and market-making bots, and sentiment analysis.",
+      "image": "assets/img/ramzinex.jpg"
+    },
+    {
       "role": "B.S. Civil Engineering & Research Assistant",
       "org": "Sharif University of Technology",
       "when": "2017 – 2021",
@@ -122,5 +129,19 @@
       "when": "Oct 2025"
     }
   ],
-  "email": "mpm7767@psu.edu"
+  "email": "mpm7767@psu.edu",
+  "pubOverrides": [
+    {
+      "_note": "Corrects ORCID entries on the site. Match by the start of the title (any case).",
+      "match": "inferring vehicle speeds",
+      "type": "conference paper",
+      "venue": "Transportation Research Board (TRB) 103rd Annual Meeting",
+      "year": "2024"
+    },
+    {
+      "match": "evaluation of gainesville",
+      "type": "technical report",
+      "url": "https://rosap.ntl.bts.gov/view/dot/93277"
+    }
+  ]
 }
