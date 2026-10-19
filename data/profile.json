@@ -140,7 +140,9 @@
     {
       "role": "Vice President, Gator ITE",
       "org": "ITE Student Chapter, University of Florida · Student Chapter of the Year 2024",
-      "when": "Apr 2024 – Apr 2025"
+      "when": "Apr 2024 – Apr 2025",
+      "file": "assets/docs/gator-ite-annual-report-2024.pdf",
+      "fileLabel": "View 2024 Annual Report →"
     },
     {
       "role": "President, Civil Engineering Club",
@@ -622,7 +624,7 @@
       "id": "gainesville-tmc-2024",
       "title": "Gator ITE visit to Gainesville's traffic management center",
       "when": "Jan 2024",
-      "date": "2024-01-31",
+      "date": "2024-01-15",
       "text": "Toured the City of Gainesville's Traffic Operations office with Engineer Emmanuel Posadas: traffic signal cabinets, signal timing, and the camera wall used to monitor and manage city traffic.",
       "tags": [
         "Gator ITE",
