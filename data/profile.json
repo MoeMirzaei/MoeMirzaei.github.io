@@ -598,6 +598,25 @@
         "assets/news/sls-2024-10.jpg"
       ],
       "id": "2024-02-10-itestudentleadership"
+    },
+    {
+      "id": "gainesville-tmc-2024",
+      "title": "Gator ITE visit to Gainesville's traffic management center",
+      "when": "Jan 2024",
+      "date": "2024-01-31",
+      "text": "Toured the City of Gainesville's Traffic Operations office with Engineer Emmanuel Posadas: traffic signal cabinets, signal timing, and the camera wall used to monitor and manage city traffic.",
+      "tags": [
+        "Gator ITE",
+        "Traffic Operations",
+        "Field Visit"
+      ],
+      "images": [
+        "assets/news/gainesville-tmc-visit-1.jpg",
+        "assets/news/gainesville-tmc-visit-2.jpg",
+        "assets/news/gainesville-tmc-visit-3.jpg",
+        "assets/news/gainesville-tmc-visit-4.jpg",
+        "assets/news/gainesville-tmc-visit-5.jpg"
+      ]
     }
   ]
 }
