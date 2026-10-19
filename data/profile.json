@@ -68,7 +68,11 @@
       "org": "AtkinsRéalis — Florida DOT District Two (FDOT D2)",
       "when": "Jun 2025 – Mar 2026",
       "text": "Supported FDOT D2 on ITS projects: connected vehicle deployments, the innovative Truck Parking Availability System (iTPAS), rail crossing detection, wrong-way vehicle detection, video analytics and other emerging technology evaluations.",
-      "image": "assets/img/atkinsrealis.jpg"
+      "image": "assets/img/atkinsrealis.jpg",
+      "images": [
+        "assets/img/atkinsrealis.jpg",
+        "assets/img/atkinsrealis-2.jpg"
+      ]
     },
     {
       "role": "Graduate Research Assistant (I-STREET Lab)",

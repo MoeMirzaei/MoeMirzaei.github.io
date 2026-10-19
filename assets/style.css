@@ -187,3 +187,7 @@ section[id] { margin-bottom: 64px; }
 
 @keyframes flash { 0%, 60% { box-shadow: 0 0 0 3px var(--accent); } 100% { box-shadow: 0 0 0 0 transparent; } }
 .post.flash { animation: flash 2.2s ease-out; }
+
+.exp-img { position: relative; padding: 0; border: 0; background: none; cursor: zoom-in; align-self: start; border-radius: 10px; overflow: hidden; }
+.exp-img img { display: block; }
+.plus.plus-c { inset: auto 6px 6px auto; padding: 2px 9px; border-radius: 999px; font-size: .8rem; }

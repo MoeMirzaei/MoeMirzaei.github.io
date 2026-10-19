@@ -98,6 +98,11 @@ function renderNews(p) {
   lb.addEventListener("click", (e) => { if (e.target === lb) lbClose(); });
 }
 
+document.addEventListener("click", (ev) => {
+  const b = ev.target.closest("button.exp-img"); if (!b) return;
+  lbOpen(JSON.parse(b.dataset.imgs), 0);
+});
+
 function renderProfile(p) {
   renderNews(p);
   $("name").textContent = p.name;
@@ -133,7 +138,7 @@ function renderProfile(p) {
   if (p.languages) $("languages").textContent = p.languages;
 
   $("timeline").innerHTML = p.experience.map((e) => `
-    <li class="item${e.image ? "" : " no-img"}">
+    <li class="item${e.image || e.images ? "" : " no-img"}">
       <div>
         ${e.when ? `<div class="when">${esc(e.when)}</div>` : ""}
         <h3>${esc(e.role)}</h3>
@@ -141,7 +146,8 @@ function renderProfile(p) {
         <p>${esc(e.text)}</p>
         ${e.link ? `<a class="more" href="${esc(e.link.url)}" target="_blank" rel="noopener">${esc(e.link.label)} →</a>` : ""}
       </div>
-      ${e.image ? `<img src="${esc(e.image)}" alt="" loading="lazy">` : ""}
+      ${(() => { const imgs = e.images || (e.image ? [e.image] : []); if (!imgs.length) return "";
+        return `<button type="button" class="exp-img" data-imgs="${esc(JSON.stringify(imgs))}" aria-label="Open photos"><img src="${esc(imgs[0])}" alt="" loading="lazy">${imgs.length > 1 ? `<span class="plus plus-c">+${imgs.length - 1}</span>` : ""}</button>`; })()}
     </li>`).join("");
 }
 
