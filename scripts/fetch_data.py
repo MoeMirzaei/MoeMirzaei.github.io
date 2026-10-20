@@ -73,8 +73,30 @@ def orcid():
                 })
         return out
 
+    # Peer reviews (Web of Science reviews arrive here when WoS -> ORCID sync is on)
+    reviews = []
+    for g in val(acts, "peer-reviews", "group") or []:
+        for pg in g.get("peer-review-group") or []:
+            for r in pg.get("peer-review-summary") or []:
+                reviews.append({
+                    "year": val(r, "completion-date", "year", "value") or "",
+                    "publisher": val(r, "convening-organization", "name") or "",
+                    "type": r.get("review-type") or "",
+                    "source": val(r, "source", "source-name", "value") or "",
+                })
+    by_year = {}
+    for r in reviews:
+        if r["year"]:
+            by_year[r["year"]] = by_year.get(r["year"], 0) + 1
+
     return {
         "orcid": ORCID_ID,
+        "peerReviews": {
+            "total": len(reviews),
+            "venues": len(val(acts, "peer-reviews", "group") or []),
+            "byYear": dict(sorted(by_year.items(), reverse=True)),
+            "publishers": sorted({r["publisher"] for r in reviews if r["publisher"]}),
+        },
         "biography": val(person, "biography", "content") or "",
         "keywords": [k.get("content") for k in val(person, "keywords", "keyword") or [] if k.get("content")],
         "employments": affiliations("employments"),

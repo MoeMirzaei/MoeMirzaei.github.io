@@ -183,6 +183,17 @@ function applyOverrides(works, overrides) {
   return (works || []).sort((a, b) => String(b.year || "0").localeCompare(String(a.year || "0")));
 }
 
+function renderReviews(pr) {
+  if (!pr || !pr.total) return;   // hidden until ORCID lists at least one review
+  const years = Object.keys(pr.byYear || {}).sort((a, b) => b - a);
+  const span = years.length ? (years.length > 1 ? `${years[years.length - 1]}–${years[0]}` : years[0]) : "";
+  const stat = (n, label) => `<div class="stat"><b>${esc(n)}</b><span>${esc(label)}</span></div>`;
+  $("review-stats").innerHTML = stat(pr.total, pr.total === 1 ? "verified review" : "verified reviews") +
+    stat(pr.venues, pr.venues === 1 ? "journal" : "journals") + (span ? stat(span, "active years") : "");
+  $("review-meta").innerHTML = `${pr.publishers?.length ? `For ${esc(pr.publishers.join(", "))} · ` : ""}Verified via <a href="https://orcid.org/${ORCID_ID}" target="_blank" rel="noopener">ORCID</a> and Web of Science`;
+  $("reviews").hidden = false;
+}
+
 function renderPubs(works, updated) {
   (works || []).forEach((w) => { w.title = fixCase(w.title); });
   const list = $("pubs");
@@ -231,4 +242,5 @@ function renderPubs(works, updated) {
   let works = orcid?.works;
   if (!works || !works.length) works = await liveOrcidWorks();
   renderPubs(applyOverrides(works, profile?.pubOverrides), orcid?.updated);
+  renderReviews(orcid?.peerReviews);
 })();

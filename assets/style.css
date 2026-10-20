@@ -191,3 +191,10 @@ section[id] { margin-bottom: 64px; }
 .exp-img { position: relative; padding: 0; border: 0; background: none; cursor: zoom-in; align-self: start; border-radius: 10px; overflow: hidden; }
 .exp-img img { display: block; }
 .plus.plus-c { inset: auto 6px 6px auto; padding: 2px 9px; border-radius: 999px; font-size: .8rem; }
+
+/* peer review stats */
+.reviews { margin-top: 28px; }
+.stats { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 8px; }
+.stat { background: var(--surface); border: 1px solid var(--line); border-left: 4px solid var(--accent); border-radius: 10px; padding: 12px 18px; min-width: 140px; }
+.stat b { display: block; font-family: var(--serif); font-size: 1.7rem; color: var(--ink); line-height: 1.1; }
+.stat span { color: var(--muted); font-size: .85rem; }
