@@ -183,15 +183,24 @@ function applyOverrides(works, overrides) {
   return (works || []).sort((a, b) => String(b.year || "0").localeCompare(String(a.year || "0")));
 }
 
-function renderReviews(pr) {
+function renderReviews(pr, names) {
   if (!pr || !pr.total) return;   // hidden until ORCID lists at least one review
+  names = names || {};
+  const kinds = { journal: { n: 0, v: [] }, conference: { n: 0, v: [] } };
+  (pr.venueList || []).forEach((v) => {
+    const info = names[v.groupId] || names[v.id] || {};
+    const k = info.kind === "conference" ? "conference" : "journal";
+    kinds[k].n += v.count;
+    kinds[k].v.push(`${info.name || v.groupId.replace("issn:", "ISSN ")} (${v.count})`);
+  });
   const years = Object.keys(pr.byYear || {}).sort((a, b) => b - a);
   const span = years.length ? (years.length > 1 ? `${years[years.length - 1]}–${years[0]}` : years[0]) : "";
-  const stat = (n, label) => `<div class="stat"><b>${esc(n)}</b><span>${esc(label)}</span></div>`;
-  $("review-stats").innerHTML = stat(pr.total, pr.total === 1 ? "verified review" : "verified reviews") +
-    stat(pr.venues, pr.venues === 1 ? "journal" : "journals") + (span ? stat(span, "active years") : "");
-  const pubs = (pr.publishers || []).filter((n) => !/clarivate|web of science|publons/i.test(n));
-  $("review-meta").innerHTML = `${pubs.length ? `Including reviews for ${esc(pubs.join(", "))} · ` : ""}Verified via <a href="https://orcid.org/${ORCID_ID}" target="_blank" rel="noopener">ORCID</a> and Web of Science`;
+  const stat = (n, label, sub) => `<div class="stat"><b>${esc(n)}</b><span>${esc(label)}</span>${sub ? `<small>${esc(sub)}</small>` : ""}</div>`;
+  $("review-stats").innerHTML = stat(pr.total, "total reviews") +
+    (kinds.journal.n ? stat(kinds.journal.n, "journal reviews", kinds.journal.v.join(" · ")) : "") +
+    (kinds.conference.n ? stat(kinds.conference.n, "conference reviews", kinds.conference.v.join(" · ")) : "") +
+    (span ? stat(span, "active years") : "");
+  $("review-meta").innerHTML = `Verified via <a href="https://orcid.org/${ORCID_ID}" target="_blank" rel="noopener">ORCID</a> and Web of Science`;
   $("reviews").hidden = false;
 }
 
@@ -243,5 +252,5 @@ function renderPubs(works, updated) {
   let works = orcid?.works;
   if (!works || !works.length) works = await liveOrcidWorks();
   renderPubs(applyOverrides(works, profile?.pubOverrides), orcid?.updated);
-  renderReviews(orcid?.peerReviews);
+  renderReviews(orcid?.peerReviews, profile?.reviewVenues);
 })();

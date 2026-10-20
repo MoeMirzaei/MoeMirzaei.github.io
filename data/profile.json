@@ -662,5 +662,16 @@
         "assets/news/gainesville-tmc-visit-5.jpg"
       ]
     }
-  ]
+  ],
+  "reviewVenues": {
+    "_note": "Names and type for each review venue ORCID lists (ORCID only gives ISSN codes). kind: journal or conference.",
+    "issn:0386-1112": {
+      "name": "IATSS Research",
+      "kind": "journal"
+    },
+    "issn:1073-1652": {
+      "name": "TRB Annual Meeting",
+      "kind": "conference"
+    }
+  }
 }
