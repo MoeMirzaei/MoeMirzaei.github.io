@@ -118,9 +118,10 @@ function renderProfile(p) {
   const L = (t) => linkPeople(esc(t), p.people);
   const card = (l) => `<li><b>${esc(l.role)}</b><span class="org">${L(l.org)}</span>${l.file ? `<a class="view" href="${esc(l.file)}" target="_blank" rel="noopener">${esc(l.fileLabel || "View certificate →")}</a>` : ""}${l.news ? `<a class="view" href="#news-${esc(l.news)}" data-news="${esc(l.news)}">See photos in News →</a>` : ""}<span class="when">${esc(l.when)}</span></li>`;
   $("teaching").innerHTML = (p.teaching || []).map(card).join("");
-  $("leadership").innerHTML = (p.leadership || []).map(card).join("");
+  const badgeCard = (l) => `<li><span class="badge">${esc(l.badge || l.role.slice(0, 3))}</span><div class="badge-body"><b>${esc(l.role)}</b><span class="org">${L(l.org)}</span><span class="when">${esc(l.when)}</span>${l.file ? `<a class="view" href="${esc(l.file)}" target="_blank" rel="noopener">${esc(l.fileLabel || "View →")}</a>` : ""}${l.news ? `<a class="view" href="#news-${esc(l.news)}" data-news="${esc(l.news)}">See photos in News →</a>` : ""}</div></li>`;
+  $("leadership").innerHTML = (p.leadership || []).map(badgeCard).join("");
   $("talks").innerHTML = (p.talks || []).map(card).join("");
-  $("memberships").innerHTML = (p.memberships || []).map(card).join("");
+  $("memberships").innerHTML = (p.memberships || []).map(badgeCard).join("");
   const certs = p.certificates || [], shown = p.certificatesShown || 3;
   const drawCerts = (all) => { $("certificates").innerHTML = (all ? certs : certs.slice(0, shown)).map(card).join(""); };
   drawCerts(false);

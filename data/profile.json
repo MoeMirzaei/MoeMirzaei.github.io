@@ -139,19 +139,23 @@
     {
       "role": "Director of Communication, Penn State ITE",
       "org": "ITE Student Chapter, Pennsylvania State University",
-      "when": "Oct 2026 – Present"
+      "when": "Oct 2026 – Present",
+      "badge": "PSU ITE"
     },
     {
       "role": "Vice President, Gator ITE",
       "org": "ITE Student Chapter, University of Florida · Student Chapter of the Year 2024",
       "when": "Apr 2024 – Apr 2025",
       "file": "assets/docs/gator-ite-annual-report-2024.pdf",
-      "fileLabel": "View 2024 Annual Report →"
+      "fileLabel": "View 2024 Annual Report →",
+      "badge": "Gator ITE",
+      "news": "gator-ite-socials-2024"
     },
     {
       "role": "President, Civil Engineering Club",
       "org": "Sharif University of Technology",
-      "when": "Jun 2019 – Aug 2020"
+      "when": "Jun 2019 – Aug 2020",
+      "badge": "SUT CE"
     }
   ],
   "certificates": [
@@ -312,12 +316,14 @@
     {
       "role": "American Society of Civil Engineers (ASCE)",
       "org": "Member",
-      "when": "2024 – Present"
+      "when": "2024 – Present",
+      "badge": "ASCE"
     },
     {
       "role": "Institute of Transportation Engineers (ITE)",
       "org": "Member",
-      "when": "Sep 2023 – Present"
+      "when": "Sep 2023 – Present",
+      "badge": "ITE"
     }
   ],
   "newsShown": 3,
@@ -601,6 +607,21 @@
         "assets/news/transpo-2024-3.jpg"
       ],
       "id": "transpo-2024"
+    },
+    {
+      "id": "gator-ite-socials-2024",
+      "title": "Gator ITE socials: Lake Wauburg barbecue and bowling",
+      "when": "Apr 2024",
+      "date": "2024-04-20",
+      "text": "Building community beyond the classroom: the Gator ITE annual barbecue at Lake Wauburg and a chapter bowling night with fellow transportation students.",
+      "tags": [
+        "Gator ITE",
+        "Community"
+      ],
+      "images": [
+        "assets/news/gator-ite-socials-1.jpg",
+        "assets/news/gator-ite-socials-2.jpg"
+      ]
     },
     {
       "title": "Seminar by Dr. Fred Mannering on AI and highway safety",
