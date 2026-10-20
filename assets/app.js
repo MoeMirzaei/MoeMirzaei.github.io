@@ -190,7 +190,8 @@ function renderReviews(pr) {
   const stat = (n, label) => `<div class="stat"><b>${esc(n)}</b><span>${esc(label)}</span></div>`;
   $("review-stats").innerHTML = stat(pr.total, pr.total === 1 ? "verified review" : "verified reviews") +
     stat(pr.venues, pr.venues === 1 ? "journal" : "journals") + (span ? stat(span, "active years") : "");
-  $("review-meta").innerHTML = `${pr.publishers?.length ? `For ${esc(pr.publishers.join(", "))} · ` : ""}Verified via <a href="https://orcid.org/${ORCID_ID}" target="_blank" rel="noopener">ORCID</a> and Web of Science`;
+  const pubs = (pr.publishers || []).filter((n) => !/clarivate|web of science|publons/i.test(n));
+  $("review-meta").innerHTML = `${pubs.length ? `Including reviews for ${esc(pubs.join(", "))} · ` : ""}Verified via <a href="https://orcid.org/${ORCID_ID}" target="_blank" rel="noopener">ORCID</a> and Web of Science`;
   $("reviews").hidden = false;
 }
 
