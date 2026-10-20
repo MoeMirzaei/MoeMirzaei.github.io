@@ -155,7 +155,7 @@
       "role": "President, Civil Engineering Club",
       "org": "Sharif University of Technology",
       "when": "Jun 2019 – Aug 2020",
-      "badge": "SUT CE"
+      "badge": "ISTA"
     }
   ],
   "certificates": [
@@ -541,6 +541,20 @@
       ]
     },
     {
+      "id": "gator-ite-bowling-2024",
+      "title": "Gator ITE bowling night",
+      "when": "Oct 2024",
+      "date": "2024-10-16",
+      "text": "A chapter bowling night with Gator ITE members, connecting new and returning transportation students outside the classroom.",
+      "tags": [
+        "Gator ITE",
+        "Community"
+      ],
+      "images": [
+        "assets/news/gator-ite-socials-2.jpg"
+      ]
+    },
+    {
       "title": "First Coast ITE meeting in Gainesville",
       "when": "Sep 2024",
       "text": "FDOT and the City of Gainesville shared upcoming safety projects at the First Coast ITE meeting at Depot Park.",
@@ -610,17 +624,16 @@
     },
     {
       "id": "gator-ite-socials-2024",
-      "title": "Gator ITE socials: Lake Wauburg barbecue and bowling",
+      "title": "Gator ITE barbecue at Lake Wauburg",
       "when": "Apr 2024",
       "date": "2024-04-20",
-      "text": "Building community beyond the classroom: the Gator ITE annual barbecue at Lake Wauburg and a chapter bowling night with fellow transportation students.",
+      "text": "The annual Gator ITE barbecue at Lake Wauburg: a relaxed day building community with fellow transportation students.",
       "tags": [
         "Gator ITE",
         "Community"
       ],
       "images": [
-        "assets/news/gator-ite-socials-1.jpg",
-        "assets/news/gator-ite-socials-2.jpg"
+        "assets/news/gator-ite-socials-1.jpg"
       ]
     },
     {
