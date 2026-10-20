@@ -75,7 +75,18 @@ def orcid():
 
     # Peer reviews (Web of Science reviews arrive here when WoS -> ORCID sync is on)
     reviews = []
+    venues = []
     for g in val(acts, "peer-reviews", "group") or []:
+        gids = val(g, "external-ids", "external-id") or []
+        gid = gids[0] if gids else {}
+        first = ((g.get("peer-review-group") or [{}])[0].get("peer-review-summary") or [{}])[0]
+        venues.append({
+            "idType": gid.get("external-id-type") or "",
+            "id": gid.get("external-id-value") or "",
+            "groupId": first.get("review-group-id") or "",
+            "org": val(first, "convening-organization", "name") or "",
+            "count": len(g.get("peer-review-group") or []),
+        })
         for pg in g.get("peer-review-group") or []:
             # One review can be listed by several sources (WoS, journal...). Count it once.
             for r in (pg.get("peer-review-summary") or [])[:1]:
@@ -97,6 +108,7 @@ def orcid():
             "venues": len(val(acts, "peer-reviews", "group") or []),
             "byYear": dict(sorted(by_year.items(), reverse=True)),
             "publishers": sorted({r["publisher"] for r in reviews if r["publisher"]}),
+            "venueList": venues,
         },
         "biography": val(person, "biography", "content") or "",
         "keywords": [k.get("content") for k in val(person, "keywords", "keyword") or [] if k.get("content")],
