@@ -44,10 +44,10 @@
       "note": "Advisor: Dr. Agnimitra Sengupta"
     },
     {
-      "degree": "M.S., Civil/Transportation Engineering",
+      "degree": "M.S., Civil/Transportation Engineering · Minor in Urban and Regional Planning",
       "school": "University of Florida, Gainesville",
       "when": "2023 – 2025",
-      "note": "Advisors: Dr. Lily Elefteriadou & Dr. Pruthvi Manjunatha · GPA 4.0/4.0"
+      "note": "Advisor: Dr. Lily Elefteriadou · GPA 4.0/4.0"
     },
     {
       "degree": "B.S., Civil Engineering",
@@ -76,9 +76,9 @@
     },
     {
       "role": "Graduate Research Assistant (I-STREET Lab)",
-      "org": "University of Florida Transportation Institute, with Dr. Lily Elefteriadou & Dr. Pruthvi Manjunatha",
+      "org": "University of Florida Transportation Institute, advised by Dr. Lily Elefteriadou",
       "when": "Aug 2023 – May 2025",
-      "text": "Evaluated the Gainesville Pedestrian-Bicyclist Connected Vehicle Pilot: passive pedestrian detection, CV communication reliability, and user views of the smartphone app through focus groups and experiments. Worked with roadside units, on-board units, TravelSafely/Glance and Bosch cameras, alongside vendors (Yunex, Applied Information, Bosch) and FDOT.",
+      "text": "Evaluated the Gainesville Pedestrian-Bicyclist Connected Vehicle Pilot with I-STREET manager Dr. Pruthvi Manjunatha: passive pedestrian detection, CV communication reliability, and user views of the smartphone app through focus groups and experiments. Worked with roadside units, on-board units, TravelSafely/Glance and Bosch cameras, alongside vendors (Yunex, Applied Information, Bosch) and FDOT.",
       "link": {
         "label": "Final report (TRID)",
         "url": "https://trid.trb.org/View/2775408"
