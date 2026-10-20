@@ -77,7 +77,8 @@ def orcid():
     reviews = []
     for g in val(acts, "peer-reviews", "group") or []:
         for pg in g.get("peer-review-group") or []:
-            for r in pg.get("peer-review-summary") or []:
+            # One review can be listed by several sources (WoS, journal...). Count it once.
+            for r in (pg.get("peer-review-summary") or [])[:1]:
                 reviews.append({
                     "year": val(r, "completion-date", "year", "value") or "",
                     "publisher": val(r, "convening-organization", "name") or "",
