@@ -350,6 +350,36 @@
       ]
     },
     {
+      "id": "itspa-2026",
+      "title": "ITS Pennsylvania (ITSPA) Annual Conference",
+      "when": "Oct 2026",
+      "date": "2026-10-29",
+      "text": "Joined transportation leaders, agencies, consultants and researchers at Harrisburg University for a full day of sessions on connected and automated vehicles, AI, freight mobility and traffic safety analytics.",
+      "tags": [
+        "ITSPA",
+        "ITS",
+        "Connected Vehicles"
+      ],
+      "images": [
+        "assets/news/itspa-2026-1.jpg",
+        "assets/news/itspa-2026-2.jpg",
+        "assets/news/itspa-2026-3.jpg",
+        "assets/news/itspa-2026-4.jpg"
+      ]
+    },
+    {
+      "id": "asce-central-pa-2026",
+      "title": "ASCE Central PA Section meeting",
+      "when": "Oct 2026",
+      "date": "2026-10-14",
+      "text": "Attended the ASCE Central Pennsylvania Section meeting, connecting with civil engineering professionals in the region.",
+      "tags": [
+        "ASCE",
+        "Networking"
+      ],
+      "images": []
+    },
+    {
       "title": "U.S. DOT Road Safety Innovation Expo",
       "when": "Sep 2026",
       "text": "Explored the latest roadway safety, connected systems and emerging technologies at the U.S. DOT expo in Washington, D.C.",

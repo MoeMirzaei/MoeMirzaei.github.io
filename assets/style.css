@@ -223,3 +223,6 @@ section.orgs h2 { color: #fff; }
 .qr-dl { margin-top: 10px; font-size: .86rem; color: #646b78; }
 .qr-dl a { color: #1f4e8c; font-weight: 500; }
 @media (max-width: 480px) { .qr-card { flex-direction: column; text-align: center; } }
+
+/* news post without photos */
+.post.no-img { grid-template-columns: 1fr; height: auto; min-height: 0; border-left: 4px solid var(--accent); }
