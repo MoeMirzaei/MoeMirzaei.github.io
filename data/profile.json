@@ -140,7 +140,8 @@
       "role": "Director of Communication, Penn State ITE",
       "org": "ITE Student Chapter, Pennsylvania State University",
       "when": "Oct 2026 – Present",
-      "badge": "PSU ITE"
+      "badge": "PSU ITE",
+      "news": "sls-mcd-2026"
     },
     {
       "role": "Vice President, Gator ITE",
@@ -329,6 +330,25 @@
   "newsShown": 3,
   "linkedinActivity": "https://www.linkedin.com/in/moe-mirzaei/recent-activity/all/",
   "news": [
+    {
+      "id": "sls-mcd-2026",
+      "title": "ITE Student Leadership Summit · Penn State ITE takes 3rd in Traffic Bowl",
+      "when": "Nov 2026",
+      "date": "2026-11-07",
+      "text": "Connected with transportation professionals and students from other universities, and represented Penn State ITE as our team earned 3rd place in the Traffic Bowl. Thanks to ITE Mid-Colonial District and MASITE for organizing.",
+      "tags": [
+        "SLS",
+        "Penn State ITE",
+        "Traffic Bowl"
+      ],
+      "images": [
+        "assets/news/sls-mcd-2026-1.jpg",
+        "assets/news/sls-mcd-2026-2.jpg",
+        "assets/news/sls-mcd-2026-3.jpg",
+        "assets/news/sls-mcd-2026-4.jpg",
+        "assets/news/sls-mcd-2026-5.jpg"
+      ]
+    },
     {
       "title": "U.S. DOT Road Safety Innovation Expo",
       "when": "Sep 2026",
