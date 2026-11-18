@@ -22,16 +22,15 @@
       "SQL / MongoDB",
       "Docker"
     ],
-    "Traffic Simulation & Analysis": [
+    "Software": [
       "VISSIM",
       "VISUM",
       "HCS",
       "TSIS CORSIM",
       "TRANSYT-7F",
-      "SwashSim"
-    ],
-    "GIS": [
-      "ArcGIS Pro"
+      "SwashSim",
+      "ArcGIS Pro",
+      "AutoCAD"
     ]
   },
   "links": {
@@ -390,6 +389,8 @@
         "Networking"
       ],
       "images": [
+        "assets/news/asce-central-pa-2026-3.jpg",
+        "assets/news/asce-central-pa-2026-2.jpg",
         "assets/news/asce-central-pa-2026-1.jpg"
       ]
     },
