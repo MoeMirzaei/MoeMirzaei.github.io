@@ -114,7 +114,10 @@ function renderProfile(p) {
   renderLinks(p.links, $("links"), p.cv);
   renderLinks(p.links, $("links-footer"), p.cv);
   $("contact-linkedin").href = p.links.linkedin;
-  $("skills").innerHTML = (p.skills || []).map((s) => `<li>${esc(s)}</li>`).join("");
+  const sk = p.skills || [];
+  $("skills").innerHTML = Array.isArray(sk)
+    ? sk.map((s) => `<li>${esc(s)}</li>`).join("")
+    : Object.entries(sk).map(([cat, items]) => `<li class="skill-group"><span class="skill-cat">${esc(cat)}</span><ul class="chips chips-quiet">${items.map((s) => `<li>${esc(s)}</li>`).join("")}</ul></li>`).join("");
   const L = (t) => linkPeople(esc(t), p.people);
   const card = (l) => `<li><b>${esc(l.role)}</b><span class="org">${L(l.org)}</span>${l.file ? `<a class="view" href="${esc(l.file)}" target="_blank" rel="noopener">${esc(l.fileLabel || "View certificate →")}</a>` : ""}${l.news ? `<a class="view" href="#news-${esc(l.news)}" data-news="${esc(l.news)}">See photos in News →</a>` : ""}<span class="when">${esc(l.when)}</span></li>`;
   $("teaching").innerHTML = (p.teaching || []).map(card).join("");

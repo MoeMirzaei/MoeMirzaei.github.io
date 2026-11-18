@@ -13,21 +13,27 @@
     "AI & Data Science",
     "Computer Vision"
   ],
-  "skills": [
-    "Python",
-    "R",
-    "Julia",
-    "MATLAB",
-    "SQL / MongoDB",
-    "Docker",
-    "VISSIM",
-    "VISUM",
-    "HCS",
-    "TSIS CORSIM",
-    "TRANSYT-7F",
-    "SwashSim",
-    "ArcGIS Pro"
-  ],
+  "skills": {
+    "Programming & Data": [
+      "Python",
+      "R",
+      "Julia",
+      "MATLAB",
+      "SQL / MongoDB",
+      "Docker"
+    ],
+    "Traffic Simulation & Analysis": [
+      "VISSIM",
+      "VISUM",
+      "HCS",
+      "TSIS CORSIM",
+      "TRANSYT-7F",
+      "SwashSim"
+    ],
+    "GIS": [
+      "ArcGIS Pro"
+    ]
+  },
   "links": {
     "scholar": "https://scholar.google.com/citations?user=nfa_qrsAAAAJ",
     "orcid": "https://orcid.org/0000-0002-8083-2653",
@@ -325,6 +331,12 @@
       "org": "Member",
       "when": "Sep 2023 – Present",
       "badge": "ITE"
+    },
+    {
+      "role": "Intelligent Transportation Society of Pennsylvania (ITSPA)",
+      "org": "Member",
+      "when": "2026 – Present",
+      "badge": "ITSPA"
     }
   ],
   "newsShown": 3,
@@ -377,7 +389,9 @@
         "ASCE",
         "Networking"
       ],
-      "images": []
+      "images": [
+        "assets/news/asce-central-pa-2026-1.jpg"
+      ]
     },
     {
       "title": "U.S. DOT Road Safety Innovation Expo",
