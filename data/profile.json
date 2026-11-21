@@ -342,6 +342,26 @@
   "linkedinActivity": "https://www.linkedin.com/in/moe-mirzaei/recent-activity/all/",
   "news": [
     {
+      "id": "pa-report-card-2026",
+      "title": "Lunch with ASCE after the 2026 Pennsylvania Infrastructure Report Card",
+      "when": "Nov 2026",
+      "date": "2026-11-17",
+      "text": "Joined ASCE President Carol Haddock, ASCE Government Relations and Communications staff, ASCE Central PA board members, and Penn State Harrisburg CCEE faculty and students for lunch on campus after the 2026 Pennsylvania Infrastructure Report Card release.",
+      "tags": [
+        "ASCE",
+        "Infrastructure",
+        "Penn State Harrisburg"
+      ],
+      "images": [
+        "assets/news/pa-report-card-2026-1.jpg",
+        "assets/news/pa-report-card-2026-2.jpg",
+        "assets/news/pa-report-card-2026-3.jpg",
+        "assets/news/pa-report-card-2026-4.jpg",
+        "assets/news/pa-report-card-2026-5.jpg",
+        "assets/news/pa-report-card-2026-6.jpg"
+      ]
+    },
+    {
       "id": "sls-mcd-2026",
       "title": "ITE Student Leadership Summit · Penn State ITE takes 3rd in Traffic Bowl",
       "when": "Nov 2026",
