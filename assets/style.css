@@ -232,3 +232,5 @@ section.orgs h2 { color: #fff; }
 .skill-group { display: grid; grid-template-columns: 220px 1fr; gap: 12px; align-items: start; }
 .skill-cat { font-weight: 600; color: var(--ink); font-size: .92rem; padding-top: 5px; }
 @media (max-width: 680px) { .skill-group { grid-template-columns: 1fr; gap: 6px; } }
+.fullname-contact { margin: 6px 0 4px; font-size: 1.02rem; }
+.fullname-contact b { font-family: var(--serif); color: var(--ink); }
