@@ -1,4 +1,4 @@
-name: Update data and deploy site
+name: Update data from ORCID and GitHub
 
 on:
   push:
@@ -9,19 +9,16 @@ on:
 
 permissions:
   contents: write
-  pages: write
-  id-token: write
 
+# The site itself is published by GitHub Pages from the main branch.
+# This workflow only refreshes data/*.json and commits it; that commit triggers the Pages build.
 concurrency:
-  group: pages
+  group: data-refresh
   cancel-in-progress: false
 
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
 
@@ -41,10 +38,3 @@ jobs:
           git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
           git add data/
           git diff --cached --quiet || (git commit -m "Update data from ORCID/GitHub" && git push)
-
-      - uses: actions/configure-pages@v5
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: .
-      - id: deployment
-        uses: actions/deploy-pages@v4
