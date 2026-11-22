@@ -234,3 +234,13 @@ section.orgs h2 { color: #fff; }
 @media (max-width: 680px) { .skill-group { grid-template-columns: 1fr; gap: 6px; } }
 .fullname-contact { margin: 6px 0 4px; font-size: 1.02rem; }
 .fullname-contact b { font-family: var(--serif); color: var(--ink); }
+
+/* phones: stack photo on top, show full title and text */
+@media (max-width: 680px) {
+  .post { grid-template-columns: 1fr; height: auto; }
+  .post .gallery { height: 210px; }
+  .post-body { padding: 14px 16px 16px; overflow: visible; }
+  .post h3, .post p { display: block; -webkit-line-clamp: unset; overflow: visible; }
+  .post h3 { font-size: 1.05rem; }
+  .post p { font-size: .92rem; }
+}
