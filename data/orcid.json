@@ -1,10 +1,10 @@
 {
   "orcid": "0000-0002-8083-2653",
   "peerReviews": {
-    "total": 20,
-    "venues": 2,
+    "total": 22,
+    "venues": 3,
     "byYear": {
-      "2026": 12,
+      "2026": 14,
       "2025": 4,
       "2024": 4
     },
@@ -18,7 +18,7 @@
         "id": "issn:0386-1112",
         "groupId": "issn:0386-1112",
         "org": "Elsevier, Inc.",
-        "count": 2
+        "count": 3
       },
       {
         "idType": "peer-review",
@@ -26,6 +26,13 @@
         "groupId": "issn:1073-1652",
         "org": "Clarivate PLC",
         "count": 18
+      },
+      {
+        "idType": "peer-review",
+        "id": "issn:2590-1982",
+        "groupId": "issn:2590-1982",
+        "org": "Elsevier, Inc.",
+        "count": 1
       }
     ]
   },
@@ -94,5 +101,5 @@
       "url": null
     }
   ],
-  "updated": "2026-10-20"
+  "updated": "2026-11-23"
 }
