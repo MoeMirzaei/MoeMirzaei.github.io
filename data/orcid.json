@@ -1,10 +1,10 @@
 {
   "orcid": "0000-0002-8083-2653",
   "peerReviews": {
-    "total": 22,
+    "total": 23,
     "venues": 3,
     "byYear": {
-      "2026": 14,
+      "2026": 15,
       "2025": 4,
       "2024": 4
     },
@@ -14,13 +14,15 @@
     ],
     "venueList": [
       {
+        "name": "IATSS Research",
         "idType": "peer-review",
         "id": "issn:0386-1112",
         "groupId": "issn:0386-1112",
         "org": "Elsevier, Inc.",
-        "count": 3
+        "count": 4
       },
       {
+        "name": "",
         "idType": "peer-review",
         "id": "issn:1073-1652",
         "groupId": "issn:1073-1652",
@@ -28,6 +30,7 @@
         "count": 18
       },
       {
+        "name": "Transportation Research Interdisciplinary Perspectives",
         "idType": "peer-review",
         "id": "issn:2590-1982",
         "groupId": "issn:2590-1982",
@@ -101,5 +104,5 @@
       "url": null
     }
   ],
-  "updated": "2026-11-23"
+  "updated": "2026-11-25"
 }
