@@ -106,7 +106,6 @@ document.addEventListener("click", (ev) => {
 function renderProfile(p) {
   renderNews(p);
   $("name").textContent = p.name;
-  $("title").textContent = p.title;
   $("tagline").textContent = p.tagline;
   if (p.photo) $("photo").src = p.photo;
   $("interests").innerHTML = p.interests.map((i) => `<li>${esc(i)}</li>`).join("");
