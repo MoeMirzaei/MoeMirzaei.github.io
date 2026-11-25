@@ -23,11 +23,17 @@ async function getJSON(url, opts) {
 
 const CV_ICON = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0-4-4m4 4 4-4M5 21h14"/></svg>';
 
-function renderLinks(links, el, cv) {
-  el.innerHTML = (cv ? `<a class="btn btn-cv" href="${esc(cv)}" target="_blank" rel="noopener">${CV_ICON}Download CV</a>` : "") +
-    Object.entries(links)
-      .map(([k, url]) => `<a class="btn" href="${esc(url)}" target="_blank" rel="noopener">${ICONS[k] || ""}${LABELS[k] || k}</a>`)
-      .join("");
+const MAIL_ICON = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>';
+
+// Row 1: CV, LinkedIn, Email, GitHub. Row 2: academic profiles.
+function renderLinks(links, el, cv, email) {
+  const btn = (k) => links[k] ? `<a class="btn" href="${esc(links[k])}" target="_blank" rel="noopener">${ICONS[k] || ""}${LABELS[k] || k}</a>` : "";
+  const row1 = (cv ? `<a class="btn btn-cv" href="${esc(cv)}" target="_blank" rel="noopener">${CV_ICON}Download CV</a>` : "") +
+    btn("linkedin") +
+    (email ? `<a class="btn" href="mailto:${esc(email)}">${MAIL_ICON}Email</a>` : "") +
+    btn("github");
+  const row2 = ["orcid", "scholar", "wos", "researchgate"].map(btn).join("");
+  el.innerHTML = `<div class="link-row">${row1}</div><div class="link-row">${row2}</div>`;
 }
 
 // Turn advisor names into links to their pages (names come from profile.json "people").
@@ -109,8 +115,8 @@ function renderProfile(p) {
   $("tagline").textContent = p.tagline;
   if (p.photo) $("photo").src = p.photo;
   $("interests").innerHTML = p.interests.map((i) => `<li>${esc(i)}</li>`).join("");
-  renderLinks(p.links, $("links"), p.cv);
-  renderLinks(p.links, $("links-footer"), p.cv);
+  renderLinks(p.links, $("links"), p.cv, p.email);
+  renderLinks(p.links, $("links-footer"), p.cv, p.email);
   $("contact-linkedin").href = p.links.linkedin;
   const sk = p.skills || [];
   $("skills").innerHTML = Array.isArray(sk)
@@ -198,10 +204,10 @@ function renderReviews(pr, names) {
   const years = Object.keys(pr.byYear || {}).sort((a, b) => b - a);
   const span = years.length ? (years.length > 1 ? `${years[years.length - 1]}–${years[0]}` : years[0]) : "";
   const stat = (n, label, sub) => `<div class="stat"><b>${esc(n)}</b><span>${esc(label)}</span>${sub ? `<small>${esc(sub)}</small>` : ""}</div>`;
-  $("review-stats").innerHTML = stat(pr.total, "total reviews") +
+  $("review-stats").innerHTML = `<div class="stat-total"><b>${esc(pr.total)}</b><span>total reviews</span></div>` +
+    (span ? stat(span, "active years") : "") +
     (kinds.journal.n ? stat(kinds.journal.n, "journal reviews", kinds.journal.v.join(" · ")) : "") +
-    (kinds.conference.n ? stat(kinds.conference.n, "conference reviews", kinds.conference.v.join(" · ")) : "") +
-    (span ? stat(span, "active years") : "");
+    (kinds.conference.n ? stat(kinds.conference.n, "conference reviews", kinds.conference.v.join(" · ")) : "");
   $("review-meta").innerHTML = `Verified via <a href="https://orcid.org/${ORCID_ID}" target="_blank" rel="noopener">ORCID</a> and Web of Science`;
   $("reviews").hidden = false;
 }

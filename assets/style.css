@@ -55,7 +55,8 @@ h1 { font-size: clamp(2.3rem, 5vw, 3.2rem); }
 .subtitle { margin: 6px 0 14px; color: var(--muted); font-size: 1.1rem; }
 .tagline { margin: 0 0 22px; max-width: 58ch; font-size: 1.05rem; }
 
-.links { display: flex; flex-wrap: wrap; gap: 10px; }
+.links { display: flex; flex-direction: column; gap: 10px; }
+.link-row { display: flex; flex-wrap: wrap; gap: 10px; }
 .btn { display: inline-flex; align-items: center; gap: 8px; padding: 8px 14px; border: 1px solid var(--line); border-radius: 999px; background: var(--surface); color: var(--ink); text-decoration: none; font-size: .9rem; font-weight: 500; transition: border-color .15s, transform .15s; }
 .btn:hover { border-color: var(--accent); color: var(--ink); transform: translateY(-1px); }
 .btn svg { width: 16px; height: 16px; flex: none; }
@@ -245,3 +246,9 @@ section.orgs h2 { color: #fff; }
   .post h3 { font-size: 1.05rem; }
   .post p { font-size: .92rem; }
 }
+
+/* Peer review: total shown as a filled circle */
+.stats { align-items: center; }
+.stat-total { width: 118px; height: 118px; border-radius: 50%; background: var(--accent); color: #fff; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; box-shadow: 0 6px 18px rgba(0,0,0,.12); flex: none; }
+.stat-total b { font-family: var(--serif); font-size: 2.3rem; line-height: 1; }
+.stat-total span { font-size: .78rem; margin-top: 4px; opacity: .92; }
