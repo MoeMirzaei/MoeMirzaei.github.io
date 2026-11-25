@@ -107,7 +107,6 @@ function renderProfile(p) {
   renderNews(p);
   $("name").textContent = p.name;
   $("title").textContent = p.title;
-  if (p.subtitle2) $("subtitle2").textContent = p.subtitle2;
   $("tagline").textContent = p.tagline;
   if (p.photo) $("photo").src = p.photo;
   $("interests").innerHTML = p.interests.map((i) => `<li>${esc(i)}</li>`).join("");
@@ -195,7 +194,7 @@ function renderReviews(pr, names) {
     const info = names[v.groupId] || names[v.id] || {};
     const k = info.kind === "conference" ? "conference" : "journal";
     kinds[k].n += v.count;
-    kinds[k].v.push(`${info.name || v.groupId.replace("issn:", "ISSN ")} (${v.count})`);
+    kinds[k].v.push(`${info.name || v.name || v.groupId.replace("issn:", "ISSN ")} (${v.count})`);
   });
   const years = Object.keys(pr.byYear || {}).sort((a, b) => b - a);
   const span = years.length ? (years.length > 1 ? `${years[years.length - 1]}–${years[0]}` : years[0]) : "";

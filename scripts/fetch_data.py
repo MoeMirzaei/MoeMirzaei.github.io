@@ -37,6 +37,16 @@ def fmt_date(d):
     return f"{y}-{m}" if y and m else (y or "")
 
 
+def journal_name(group_id):
+    """Look up a journal's title from Crossref using the ISSN ORCID gives (e.g. 'issn:2590-1982')."""
+    if not group_id.startswith("issn:"):
+        return ""
+    try:
+        return get_json(f"https://api.crossref.org/journals/{group_id[5:]}")["message"]["title"] or ""
+    except Exception:
+        return ""
+
+
 def orcid():
     base = f"https://pub.orcid.org/v3.0/{ORCID_ID}"
     rec = get_json(f"{base}/record")
@@ -81,6 +91,7 @@ def orcid():
         gid = gids[0] if gids else {}
         first = ((g.get("peer-review-group") or [{}])[0].get("peer-review-summary") or [{}])[0]
         venues.append({
+            "name": journal_name(first.get("review-group-id") or ""),
             "idType": gid.get("external-id-type") or "",
             "id": gid.get("external-id-value") or "",
             "groupId": first.get("review-group-id") or "",

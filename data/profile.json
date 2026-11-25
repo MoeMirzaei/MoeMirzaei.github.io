@@ -2,7 +2,7 @@
   "_note": "Edit this file by hand. LinkedIn can't be read automatically, so keep your experience here. Publications come from ORCID automatically.",
   "name": "Moe Mirzaei",
   "fullName": "Mohammadreza Mirzaei",
-  "title": "Transportation Engineering",
+  "title": "Engineer",
   "tagline": "Safer roads, smoother traffic, smarter cities: I pursue these goals by applying data, computer vision and AI to ITS, traffic safety and operations, and human factors.",
   "photo": "https://avatars.githubusercontent.com/u/90872315?v=4",
   "interests": [
@@ -261,7 +261,6 @@
       ]
     }
   ],
-  "subtitle2": "Ph.D. Student · Graduate Research Assistant",
   "people": {
     "Dr. Agnimitra Sengupta": "https://harrisburg.psu.edu/faculty-and-staff/agnimitra-sengupta",
     "Dr. Lily Elefteriadou": "https://www.essie.ufl.edu/people/name/lily-elefteriadou/",
@@ -783,7 +782,7 @@
     }
   ],
   "reviewVenues": {
-    "_note": "Names and type for each review venue ORCID lists (ORCID only gives ISSN codes). kind: journal or conference.",
+    "_note": "Optional name/kind overrides per review venue. Names are also looked up automatically from Crossref by ISSN. kind: journal or conference.",
     "issn:0386-1112": {
       "name": "IATSS Research",
       "kind": "journal"
@@ -791,6 +790,10 @@
     "issn:1073-1652": {
       "name": "TRB Annual Meeting",
       "kind": "conference"
+    },
+    "issn:2590-1982": {
+      "name": "Transportation Research Interdisciplinary Perspectives",
+      "kind": "journal"
     }
   }
 }
